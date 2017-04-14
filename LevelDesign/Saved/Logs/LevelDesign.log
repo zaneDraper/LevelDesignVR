@@ -1,0 +1,1365 @@
+﻿Log file open, 04/13/17 21:28:12
+LogInit:Display: Running engine for game: LevelDesign
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(418045788) SRandInit(418045789).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 3.800401
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.14-01.28.14:328][  0]LogConsoleManager:Display: Setting the console variable 'r.RHICmdBypass' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'. Value remains '1'
+[2017.04.14-01.28.14:378][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.14-01.28.14:378][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.14-01.28.14:544][  0]LogInit: Computer: DESKTOP-GVLTRK6
+[2017.04.14-01.28.14:544][  0]LogInit: User: Zane
+[2017.04.14-01.28.14:544][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.14-01.28.14:544][  0]LogInit: High frequency timer resolution =2.338348 MHz
+[2017.04.14-01.28.14:544][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.04.14-01.28.14:544][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.14-01.28.14:544][  0]LogMemory: Process Physical Memory: 265.77 MB used, 265.77 MB peak
+[2017.04.14-01.28.14:544][  0]LogMemory: Process Virtual Memory: 262.63 MB used, 262.63 MB peak
+[2017.04.14-01.28.14:544][  0]LogMemory: Physical Memory: 3584.14 MB used,  4516.83 MB free, 8100.97 MB total
+[2017.04.14-01.28.14:544][  0]LogMemory: Virtual Memory: 645.59 MB used,  4516.83 MB free, 134217728.00 MB total
+[2017.04.14-01.28.15:854][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.04.14-01.28.19:735][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.14-01.28.19:786][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2017.04.14-01.28.19:786][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2017.04.14-01.28.19:813][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.14-01.28.19:813][  0]LogD3D11RHI:       0/0/4050 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.14-01.28.19:813][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.14-01.28.19:818][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.14-01.28.19:818][  0]LogD3D11RHI:     GPU DeviceId: 0x416 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.14-01.28.19:818][  0]LogWindows: EnumDisplayDevices:
+[2017.04.14-01.28.19:818][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.04.14-01.28.19:819][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.04.14-01.28.19:819][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.04.14-01.28.19:819][  0]LogWindows: DebugString: FoundDriverCount:3 
+[2017.04.14-01.28.19:819][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics 4600
+[2017.04.14-01.28.19:819][  0]LogD3D11RHI:   Driver Version: 20.19.15.4531 (internal:20.19.15.4531, unified:20.19.15.4531)
+[2017.04.14-01.28.19:819][  0]LogD3D11RHI:      Driver Date: 9-29-2016
+[2017.04.14-01.28.19:819][  0]LogRHI: Texture pool is 795 MB (70% of 1136 MB)
+[2017.04.14-01.28.19:839][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.14-01.28.20:214][  0]LogD3D11RHI: GPU Timing Frequency: 12.500000 (Debug: 2 0)
+[2017.04.14-01.28.20:293][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Intermediate/Shaders/WorkingDirectory/1208/).
+[2017.04.14-01.28.20:293][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Zane/AppData/Local/Temp/UnrealShaderWorkingDir/D8F7D6B34971CC9AC2CA98BF38CA2181/'.
+[2017.04.14-01.28.20:317][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.14-01.28.24:886][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.14-01.28.24:940][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.14-01.28.24:993][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.14-01.28.25:050][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.14-01.28.25:176][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.14-01.28.25:229][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.14-01.28.25:284][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.14-01.28.25:338][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.14-01.28.25:415][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.14-01.28.25:507][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.14-01.28.25:570][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.14-01.28.25:623][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.14-01.28.25:677][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.14-01.28.25:731][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.14-01.28.25:786][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.14-01.28.25:898][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.14-01.28.25:898][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.14-01.28.25:979][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.14-01.28.26:135][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.14-01.28.26:169][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.14-01.28.26:220][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.14-01.28.26:270][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.14-01.28.26:322][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.14-01.28.26:389][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.14-01.28.26:389][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.14-01.28.27:629][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.14-01.28.27:630][  0]LogDerivedDataCache:Display: Starting with empty Boot cache
+[2017.04.14-01.28.27:630][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.14-01.28.27:630][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.14-01.28.27:630][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.14-01.28.27:630][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.14-01.28.27:681][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.14-01.28.27:722][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Zane/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.14-01.28.27:981][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.14-01.28.28:299][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.14-01.28.28:299][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.14-01.28.39:301][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.14-01.28.39:448][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.14-01.28.39:598][  0]LogMaterial: Missing cached shader map for material DefaultDeferredDecalMaterial, compiling. 
+[2017.04.14-01.28.39:600][  0]LogTemp:Display: Added material ShaderMap 0x00000245A84B4800 with Material 0x00000245A84CEB00 to ShaderMapsBeingCompiled
+[2017.04.14-01.28.48:399][  0]LogTemp:Display: Finished compile of shader map 0x00000245A84B4800
+[2017.04.14-01.28.48:399][  0]LogTemp:Display: Shader map DefaultDeferredDecalMaterial complete, GameThreadShaderMap 0x00000245A84B4800, marking material DefaultDeferredDecalMaterial as finished
+[2017.04.14-01.28.48:399][  0]LogTemp:Display: Marking material as finished 0x00000245A84CEB00
+[2017.04.14-01.28.48:498][  0]LogMaterial: Missing cached shader map for material DefaultLightFunctionMaterial, compiling. 
+[2017.04.14-01.28.48:498][  0]LogTemp:Display: Added material ShaderMap 0x00000245A99A2E80 with Material 0x00000245A84CFE80 to ShaderMapsBeingCompiled
+[2017.04.14-01.28.49:511][  0]LogTemp:Display: Finished compile of shader map 0x00000245A99A2E80
+[2017.04.14-01.28.49:511][  0]LogTemp:Display: Shader map DefaultLightFunctionMaterial complete, GameThreadShaderMap 0x00000245A99A2E80, marking material DefaultLightFunctionMaterial as finished
+[2017.04.14-01.28.49:511][  0]LogTemp:Display: Marking material as finished 0x00000245A84CFE80
+[2017.04.14-01.28.49:598][  0]LogMaterial: Missing cached shader map for material DefaultPostProcessMaterial, compiling. 
+[2017.04.14-01.28.49:616][  0]LogTemp:Display: Added material ShaderMap 0x00000245A95C0F00 with Material 0x00000245A848DA80 to ShaderMapsBeingCompiled
+[2017.04.14-01.28.50:567][  0]LogTemp:Display: Finished compile of shader map 0x00000245A95C0F00
+[2017.04.14-01.28.50:567][  0]LogTemp:Display: Shader map DefaultPostProcessMaterial complete, GameThreadShaderMap 0x00000245A95C0F00, marking material DefaultPostProcessMaterial as finished
+[2017.04.14-01.28.50:567][  0]LogTemp:Display: Marking material as finished 0x00000245A848DA80
+[2017.04.14-01.28.50:690][  0]LogMaterial: Missing cached shader map for material WorldGridMaterial, compiling. Is special engine material.
+[2017.04.14-01.28.50:691][  0]LogTemp:Display: Added material ShaderMap 0x00000245A99A0F00 with Material 0x00000245A84CD900 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.40:451][  0]LogTemp:Display: Finished compile of shader map 0x00000245A99A0F00
+[2017.04.14-01.29.40:451][  0]LogTemp:Display: Shader map WorldGridMaterial complete, GameThreadShaderMap 0x00000245A99A0F00, marking material WorldGridMaterial as finished
+[2017.04.14-01.29.40:451][  0]LogTemp:Display: Marking material as finished 0x00000245A84CD900
+[2017.04.14-01.29.41:044][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.14-01.29.41:132][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.14-01.29.41:232][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.14-01.29.41:232][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.14-01.29.41:232][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.14-01.29.41:568][  0]LogMaterial: Missing cached shader map for material M_ContentWindow, compiling. 
+[2017.04.14-01.29.41:569][  0]LogTemp:Display: Added material ShaderMap 0x00000245AE0A5280 with Material 0x00000245ADDCFE80 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.41:590][  0]LogTemp:Display: Kicking off shader compilation for M_ContentWindow, GameThreadShaderMap 0x00000245AE0A5280
+[2017.04.14-01.29.41:781][  0]LogMaterial: Missing cached shader map for material TransformGizmoMaterial, compiling. 
+[2017.04.14-01.29.41:782][  0]LogTemp:Display: Added material ShaderMap 0x00000245AA632B00 with Material 0x00000245AF208700 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.41:788][  0]LogTemp:Display: Kicking off shader compilation for TransformGizmoMaterial, GameThreadShaderMap 0x00000245AA632B00
+[2017.04.14-01.29.41:848][  0]LogMaterial: Missing cached shader map for material TranslucentTransformGizmoMaterial, compiling. 
+[2017.04.14-01.29.41:850][  0]LogTemp:Display: Added material ShaderMap 0x00000245A4EFEE80 with Material 0x00000245AB8DB580 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.41:864][  0]LogTemp:Display: Kicking off shader compilation for TranslucentTransformGizmoMaterial, GameThreadShaderMap 0x00000245A4EFEE80
+[2017.04.14-01.29.42:047][  0]LogMaterial: Missing cached shader map for material LineMaterial, compiling. 
+[2017.04.14-01.29.42:048][  0]LogTemp:Display: Added material ShaderMap 0x000002458840EE80 with Material 0x00000245AF0FE680 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.42:056][  0]LogTemp:Display: Kicking off shader compilation for LineMaterial, GameThreadShaderMap 0x000002458840EE80
+[2017.04.14-01.29.42:206][  0]LogMaterial: Missing cached shader map for material VRTextMaterial, compiling. 
+[2017.04.14-01.29.42:208][  0]LogTemp:Display: Added material ShaderMap 0x00000245A9532B00 with Material 0x00000245AB193E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.42:228][  0]LogTemp:Display: Kicking off shader compilation for VRTextMaterial, GameThreadShaderMap 0x00000245A9532B00
+[2017.04.14-01.29.42:426][  0]LogMaterial: Missing cached shader map for material DefaultTextMaterialOpaque, compiling. 
+[2017.04.14-01.29.42:427][  0]LogTemp:Display: Added material ShaderMap 0x00000245AF11E080 with Material 0x00000245AB190400 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.42:471][  0]LogTemp:Display: Kicking off shader compilation for DefaultTextMaterialOpaque, GameThreadShaderMap 0x00000245AF11E080
+[2017.04.14-01.29.43:111][  0]LogMaterial: Missing cached shader map for material GenericHMDMaterial, compiling. 
+[2017.04.14-01.29.43:112][  0]LogTemp:Display: Added material ShaderMap 0x00000245AD198B80 with Material 0x00000245AE9B3880 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.43:132][  0]LogTemp:Display: Kicking off shader compilation for GenericHMDMaterial, GameThreadShaderMap 0x00000245AD198B80
+[2017.04.14-01.29.43:305][  0]LogMaterial: Missing cached shader map for material FlattenHeightMat, compiling. 
+[2017.04.14-01.29.43:307][  0]LogTemp:Display: Added material ShaderMap 0x00000245AF61EE80 with Material 0x00000245AEA55300 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.43:320][  0]LogTemp:Display: Kicking off shader compilation for FlattenHeightMat, GameThreadShaderMap 0x00000245AF61EE80
+[2017.04.14-01.29.43:625][  0]LogMaterial: Missing cached shader map for material GridMaterial, compiling. 
+[2017.04.14-01.29.43:627][  0]LogTemp:Display: Added material ShaderMap 0x00000245AA213C80 with Material 0x00000245AA22AB00 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.43:638][  0]LogTemp:Display: Kicking off shader compilation for GridMaterial, GameThreadShaderMap 0x00000245AA213C80
+[2017.04.14-01.29.43:740][  0]LogMaterial: Missing cached shader map for material LaserPointerMaterial, compiling. 
+[2017.04.14-01.29.43:742][  0]LogTemp:Display: Added material ShaderMap 0x00000245AA12E400 with Material 0x00000245AA0F7B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.43:757][  0]LogTemp:Display: Kicking off shader compilation for LaserPointerMaterial, GameThreadShaderMap 0x00000245AA12E400
+[2017.04.14-01.29.43:973][  0]LogMaterial: Missing cached shader map for material GridPostProcess, compiling. 
+[2017.04.14-01.29.43:974][  0]LogTemp:Display: Added material ShaderMap 0x00000245AD9CA780 with Material 0x00000245AD976980 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.43:983][  0]LogTemp:Display: Kicking off shader compilation for GridPostProcess, GameThreadShaderMap 0x00000245AD9CA780
+[2017.04.14-01.29.44:532][  0]LogMaterial: Missing cached shader map for material CineMat, compiling. 
+[2017.04.14-01.29.44:533][  0]LogTemp:Display: Added material ShaderMap 0x00000245AFE54F00 with Material 0x00000245ADD75480 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.44:572][  0]LogTemp:Display: Kicking off shader compilation for CineMat, GameThreadShaderMap 0x00000245AFE54F00
+[2017.04.14-01.29.45:354][  0]LogMaterial: Missing cached shader map for material MatineeCam_mat, compiling. 
+[2017.04.14-01.29.45:355][  0]LogTemp:Display: Added material ShaderMap 0x00000245AC1A8B80 with Material 0x00000245AC176380 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.45:376][  0]LogTemp:Display: Kicking off shader compilation for MatineeCam_mat, GameThreadShaderMap 0x00000245AC1A8B80
+[2017.04.14-01.29.45:627][  0]LogMaterial: Missing cached shader map for material M_SimpleOpaque, compiling. 
+[2017.04.14-01.29.45:628][  0]LogTemp:Display: Added material ShaderMap 0x00000245AA4D6E80 with Material 0x00000245AA4C5480 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.45:650][  0]LogTemp:Display: Kicking off shader compilation for M_SimpleOpaque, GameThreadShaderMap 0x00000245AA4D6E80
+[2017.04.14-01.29.45:823][  0]LogMaterial: Missing cached shader map for material M_SimpleTranslucent, compiling. 
+[2017.04.14-01.29.45:825][  0]LogTemp:Display: Added material ShaderMap 0x00000245B0218B80 with Material 0x00000245B01CBA00 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.45:854][  0]LogTemp:Display: Kicking off shader compilation for M_SimpleTranslucent, GameThreadShaderMap 0x00000245B0218B80
+[2017.04.14-01.29.47:832][  0]LogMaterial: Missing cached shader map for material SkySphereMaterial, compiling. 
+[2017.04.14-01.29.47:834][  0]LogTemp:Display: Added material ShaderMap 0x00000245B288FC80 with Material 0x00000245B28AAF80 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.47:840][  0]LogTemp:Display: Kicking off shader compilation for SkySphereMaterial, GameThreadShaderMap 0x00000245B288FC80
+[2017.04.14-01.29.48:003][  0]LogMaterial: Missing cached shader map for material FloorPlaneMaterial, compiling. 
+[2017.04.14-01.29.48:004][  0]LogTemp:Display: Added material ShaderMap 0x00000245B288C800 with Material 0x00000245B28A9180 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.48:036][  0]LogTemp:Display: Kicking off shader compilation for FloorPlaneMaterial, GameThreadShaderMap 0x00000245B288C800
+[2017.04.14-01.29.48:689][  0]LogMaterial: Missing cached shader map for material LandscapeGizmo_Mat, compiling. 
+[2017.04.14-01.29.48:690][  0]LogTemp:Display: Added material ShaderMap 0x00000245B3364F00 with Material 0x00000245B3511900 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.48:709][  0]LogTemp:Display: Kicking off shader compilation for LandscapeGizmo_Mat, GameThreadShaderMap 0x00000245B3364F00
+[2017.04.14-01.29.48:743][  0]LogTemp:Display: Added shader map 0x00000245B3364F00 from material 0x00000245B2C63880
+[2017.04.14-01.29.48:743][  0]LogTemp:Display: Found existing compiling shader for material LandscapeGizmo_Mat, linking to other GameThreadShaderMap 0x00000245B3364F00
+[2017.04.14-01.29.48:806][  0]LogMaterial: Missing cached shader map for material LandscapeGizmoHeight_Mat, compiling. 
+[2017.04.14-01.29.48:809][  0]LogTemp:Display: Added material ShaderMap 0x00000245B2C4B200 with Material 0x00000245B2C62080 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.48:869][  0]LogTemp:Display: Kicking off shader compilation for LandscapeGizmoHeight_Mat, GameThreadShaderMap 0x00000245B2C4B200
+[2017.04.14-01.29.49:022][  0]LogMaterial: Missing cached shader map for material SplineEditorMeshMat, compiling. 
+[2017.04.14-01.29.49:024][  0]LogTemp:Display: Added material ShaderMap 0x00000245B7B32E80 with Material 0x00000245B2C50B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.49:045][  0]LogTemp:Display: Kicking off shader compilation for SplineEditorMeshMat, GameThreadShaderMap 0x00000245B7B32E80
+[2017.04.14-01.29.49:371][  0]LogMaterial: Missing cached shader map for material HelpActorMaterial, compiling. 
+[2017.04.14-01.29.49:374][  0]LogTemp:Display: Added material ShaderMap 0x00000245B8916780 with Material 0x00000245B88EBD00 to ShaderMapsBeingCompiled
+[2017.04.14-01.29.49:423][  0]LogTemp:Display: Kicking off shader compilation for HelpActorMaterial, GameThreadShaderMap 0x00000245B8916780
+[2017.04.14-01.29.51:593][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: leveldesign, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 1256183503
+[2017.04.14-01.29.52:054][  0]LogAssetRegistry: FAssetRegistry took 0.0602 seconds to start up
+[2017.04.14-01.29.52:364][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.134340 seconds
+[2017.04.14-01.29.52:390][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.14-01.29.52:390][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.04.14-01.29.52:390][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.14-01.29.52:625][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.14-01.30.34:287][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.14-01.30.34:364][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.14-01.30.35:363][  0]LogMaterial: Missing cached shader map for material DefaultMaterial, compiling. 
+[2017.04.14-01.30.35:364][  0]LogTemp:Display: Added material ShaderMap 0x00000245BD507200 with Material 0x00000245BD554E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.35:419][  0]LogTemp:Display: Kicking off shader compilation for DefaultMaterial, GameThreadShaderMap 0x00000245BD507200
+[2017.04.14-01.30.40:181][  0]LogMaterial: Missing cached shader map for material BaseColor, compiling. 
+[2017.04.14-01.30.40:182][  0]LogTemp:Display: Added material ShaderMap 0x00000245BDB7F900 with Material 0x00000245BDADE800 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.40:191][  0]LogTemp:Display: Kicking off shader compilation for BaseColor, GameThreadShaderMap 0x00000245BDB7F900
+[2017.04.14-01.30.40:328][  0]LogMaterial: Missing cached shader map for material CustomDepth, compiling. 
+[2017.04.14-01.30.40:329][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE987C80 with Material 0x00000245BDADCD00 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.40:339][  0]LogTemp:Display: Kicking off shader compilation for CustomDepth, GameThreadShaderMap 0x00000245BE987C80
+[2017.04.14-01.30.40:370][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.14-01.30.40:520][  0]LogMaterial: Missing cached shader map for material CustomStencil, compiling. 
+[2017.04.14-01.30.40:522][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE912080 with Material 0x00000245BE8EA680 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.40:534][  0]LogTemp:Display: Kicking off shader compilation for CustomStencil, GameThreadShaderMap 0x00000245BE912080
+[2017.04.14-01.30.40:662][  0]LogMaterial: Missing cached shader map for material FinalImage, compiling. 
+[2017.04.14-01.30.40:663][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE87A780 with Material 0x00000245BE8C6500 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.40:672][  0]LogTemp:Display: Kicking off shader compilation for FinalImage, GameThreadShaderMap 0x00000245BE87A780
+[2017.04.14-01.30.40:833][  0]LogMaterial: Missing cached shader map for material LightingModel, compiling. 
+[2017.04.14-01.30.40:835][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE802E80 with Material 0x00000245BE8C4880 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.40:847][  0]LogTemp:Display: Kicking off shader compilation for LightingModel, GameThreadShaderMap 0x00000245BE802E80
+[2017.04.14-01.30.40:919][  0]LogMaterial: Missing cached shader map for material MaterialAO, compiling. 
+[2017.04.14-01.30.40:921][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE77B580 with Material 0x00000245BE776980 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.40:928][  0]LogTemp:Display: Kicking off shader compilation for MaterialAO, GameThreadShaderMap 0x00000245BE77B580
+[2017.04.14-01.30.41:092][  0]LogMaterial: Missing cached shader map for material Metallic, compiling. 
+[2017.04.14-01.30.41:093][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE6EFC80 with Material 0x00000245BE775000 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:103][  0]LogTemp:Display: Kicking off shader compilation for Metallic, GameThreadShaderMap 0x00000245BE6EFC80
+[2017.04.14-01.30.41:275][  0]LogMaterial: Missing cached shader map for material Opacity, compiling. 
+[2017.04.14-01.30.41:276][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE6EC480 with Material 0x00000245BE68AF80 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:286][  0]LogTemp:Display: Kicking off shader compilation for Opacity, GameThreadShaderMap 0x00000245BE6EC480
+[2017.04.14-01.30.41:323][  0]LogMaterial: Missing cached shader map for material Roughness, compiling. 
+[2017.04.14-01.30.41:324][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE664B80 with Material 0x00000245BE689480 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:334][  0]LogTemp:Display: Kicking off shader compilation for Roughness, GameThreadShaderMap 0x00000245BE664B80
+[2017.04.14-01.30.41:460][  0]LogMaterial: Missing cached shader map for material SceneColor, compiling. 
+[2017.04.14-01.30.41:461][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE565280 with Material 0x00000245BE51B700 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:468][  0]LogTemp:Display: Kicking off shader compilation for SceneColor, GameThreadShaderMap 0x00000245BE565280
+[2017.04.14-01.30.41:627][  0]LogMaterial: Missing cached shader map for material SceneDepth, compiling. 
+[2017.04.14-01.30.41:628][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE4F1600 with Material 0x00000245BE519C00 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:637][  0]LogTemp:Display: Kicking off shader compilation for SceneDepth, GameThreadShaderMap 0x00000245BE4F1600
+[2017.04.14-01.30.41:743][  0]LogMaterial: Missing cached shader map for material SeparateTranslucencyRGB, compiling. 
+[2017.04.14-01.30.41:744][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE46D980 with Material 0x00000245BE42FD00 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:756][  0]LogTemp:Display: Kicking off shader compilation for SeparateTranslucencyRGB, GameThreadShaderMap 0x00000245BE46D980
+[2017.04.14-01.30.41:802][  0]LogMaterial: Missing cached shader map for material SeparateTranslucencyA, compiling. 
+[2017.04.14-01.30.41:803][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE3EA080 with Material 0x00000245BE42DF00 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:813][  0]LogTemp:Display: Kicking off shader compilation for SeparateTranslucencyA, GameThreadShaderMap 0x00000245BE3EA080
+[2017.04.14-01.30.41:841][  0]LogMaterial: Missing cached shader map for material Specular, compiling. 
+[2017.04.14-01.30.41:842][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE37A780 with Material 0x00000245BE42C100 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:851][  0]LogTemp:Display: Kicking off shader compilation for Specular, GameThreadShaderMap 0x00000245BE37A780
+[2017.04.14-01.30.41:944][  0]LogMaterial: Missing cached shader map for material SubsurfaceColor, compiling. 
+[2017.04.14-01.30.41:946][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE1AAE80 with Material 0x00000245BE34A500 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.41:956][  0]LogTemp:Display: Kicking off shader compilation for SubsurfaceColor, GameThreadShaderMap 0x00000245BE1AAE80
+[2017.04.14-01.30.42:050][  0]LogMaterial: Missing cached shader map for material WorldNormal, compiling. 
+[2017.04.14-01.30.42:052][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE127200 with Material 0x00000245BE348B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.42:065][  0]LogTemp:Display: Kicking off shader compilation for WorldNormal, GameThreadShaderMap 0x00000245BE127200
+[2017.04.14-01.30.42:147][  0]LogMaterial: Missing cached shader map for material AmbientOcclusion, compiling. 
+[2017.04.14-01.30.42:148][  0]LogTemp:Display: Added material ShaderMap 0x00000245BE0AB900 with Material 0x00000245BE0BA800 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.42:166][  0]LogTemp:Display: Kicking off shader compilation for AmbientOcclusion, GameThreadShaderMap 0x00000245BE0AB900
+[2017.04.14-01.30.42:305][  0]LogMaterial: Missing cached shader map for material CustomDepthWorldUnits, compiling. 
+[2017.04.14-01.30.42:307][  0]LogTemp:Display: Added material ShaderMap 0x00000245BEDDCF00 with Material 0x00000245BE0B8580 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.42:316][  0]LogTemp:Display: Kicking off shader compilation for CustomDepthWorldUnits, GameThreadShaderMap 0x00000245BEDDCF00
+[2017.04.14-01.30.42:404][  0]LogMaterial: Missing cached shader map for material SceneDepthWorldUnits, compiling. 
+[2017.04.14-01.30.42:405][  0]LogTemp:Display: Added material ShaderMap 0x00000245BED7D280 with Material 0x00000245BEDA2380 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.42:413][  0]LogTemp:Display: Kicking off shader compilation for SceneDepthWorldUnits, GameThreadShaderMap 0x00000245BED7D280
+[2017.04.14-01.30.42:503][  0]LogMaterial: Missing cached shader map for material PreTonemapHDRColor, compiling. 
+[2017.04.14-01.30.42:504][  0]LogTemp:Display: Added material ShaderMap 0x00000245BED14480 with Material 0x00000245BEDA0700 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.42:514][  0]LogTemp:Display: Kicking off shader compilation for PreTonemapHDRColor, GameThreadShaderMap 0x00000245BED14480
+[2017.04.14-01.30.42:614][  0]LogMaterial: Missing cached shader map for material PostTonemapHDRColor, compiling. 
+[2017.04.14-01.30.42:616][  0]LogTemp:Display: Added material ShaderMap 0x00000245BECA8480 with Material 0x00000245BECB2680 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.42:627][  0]LogTemp:Display: Kicking off shader compilation for PostTonemapHDRColor, GameThreadShaderMap 0x00000245BECA8480
+[2017.04.14-01.30.45:113][  0]SourceControl: Info Source control is disabled
+[2017.04.14-01.30.46:160][  0]SourceControl: Info Source control is disabled
+[2017.04.14-01.30.47:173][  0]SourceControl: Info Source control is disabled
+[2017.04.14-01.30.48:411][  0]SourceControl: Info Source control is disabled
+[2017.04.14-01.30.58:404][  0]LogMaterial: Missing cached shader map for material HighResScreenshot, compiling. 
+[2017.04.14-01.30.58:405][  0]LogTemp:Display: Added material ShaderMap 0x00000245BF463900 with Material 0x00000245BF43DA80 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.58:412][  0]LogTemp:Display: Kicking off shader compilation for HighResScreenshot, GameThreadShaderMap 0x00000245BF463900
+[2017.04.14-01.30.58:463][  0]LogMaterial: Missing cached shader map for material HighResScreenshotMask, compiling. 
+[2017.04.14-01.30.58:463][  0]LogTemp:Display: Added material ShaderMap 0x00000245BF1D8F00 with Material 0x00000245BF197880 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.58:470][  0]LogTemp:Display: Kicking off shader compilation for HighResScreenshotMask, GameThreadShaderMap 0x00000245BF1D8F00
+[2017.04.14-01.30.58:626][  0]LogMaterial: Missing cached shader map for material HighResScreenshotCaptureRegion, compiling. 
+[2017.04.14-01.30.58:629][  0]LogTemp:Display: Added material ShaderMap 0x00000245BF102780 with Material 0x00000245BF195A80 to ShaderMapsBeingCompiled
+[2017.04.14-01.30.58:636][  0]LogTemp:Display: Kicking off shader compilation for HighResScreenshotCaptureRegion, GameThreadShaderMap 0x00000245BF102780
+[2017.04.14-01.31.01:348][  0]LogEngine: Initializing Engine...
+[2017.04.14-01.31.01:480][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.14-01.31.01:623][  0]LogMaterial: Missing cached shader map for material WireframeMaterial, compiling. Is special engine material.
+[2017.04.14-01.31.01:623][  0]LogTemp:Display: Added material ShaderMap 0x00000245BF082080 with Material 0x00000245BF0C6200 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.01:762][  0]LogTemp:Display: Kicking off shader compilation for WireframeMaterial, GameThreadShaderMap 0x00000245BF082080
+[2017.04.14-01.31.01:920][  0]LogMaterial: Missing cached shader map for material LevelColorationLitMaterial, compiling. Is special engine material.
+[2017.04.14-01.31.01:922][  0]LogTemp:Display: Added material ShaderMap 0x00000245C1CFD980 with Material 0x00000245C1CD7B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.02:624][  0]LogTemp:Display: Kicking off shader compilation for LevelColorationLitMaterial, GameThreadShaderMap 0x00000245C1CFD980
+[2017.04.14-01.31.02:708][  0]LogMaterial: Missing cached shader map for material LevelColorationUnlitMaterial, compiling. Is special engine material.
+[2017.04.14-01.31.02:709][  0]LogTemp:Display: Added material ShaderMap 0x00000245C7087200 with Material 0x00000245C51E0B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.02:919][  0]LogTemp:Display: Kicking off shader compilation for LevelColorationUnlitMaterial, GameThreadShaderMap 0x00000245C7087200
+[2017.04.14-01.31.02:996][  0]LogMaterial: Missing cached shader map for material MAT_LevelColorationLitLightmapUV, compiling. Is special engine material.
+[2017.04.14-01.31.02:997][  0]LogTemp:Display: Added material ShaderMap 0x00000245C9460480 with Material 0x00000245C942EF80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.03:670][  0]LogTemp:Display: Kicking off shader compilation for MAT_LevelColorationLitLightmapUV, GameThreadShaderMap 0x00000245C9460480
+[2017.04.14-01.31.03:775][  0]LogMaterial: Missing cached shader map for material ShadedLevelColorationLitMaterial, compiling. Is special engine material.
+[2017.04.14-01.31.03:777][  0]LogTemp:Display: Added material ShaderMap 0x00000245CF5D1600 with Material 0x00000245CD9CC580 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.04:484][  0]LogTemp:Display: Kicking off shader compilation for ShadedLevelColorationLitMaterial, GameThreadShaderMap 0x00000245CF5D1600
+[2017.04.14-01.31.04:644][  0]LogMaterial: Missing cached shader map for material ShadedLevelColorationUnlitMateri, compiling. Is special engine material.
+[2017.04.14-01.31.04:646][  0]LogTemp:Display: Added material ShaderMap 0x00000245D58FEE80 with Material 0x00000245D2C94E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.04:845][  0]LogTemp:Display: Kicking off shader compilation for ShadedLevelColorationUnlitMateri, GameThreadShaderMap 0x00000245D58FEE80
+[2017.04.14-01.31.04:941][  0]LogMaterial: Missing cached shader map for material VertexColorMaterial, compiling. 
+[2017.04.14-01.31.04:942][  0]LogTemp:Display: Added material ShaderMap 0x00000245D6CF1D00 with Material 0x00000245D6CC3E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.04:999][  0]LogTemp:Display: Kicking off shader compilation for VertexColorMaterial, GameThreadShaderMap 0x00000245D6CF1D00
+[2017.04.14-01.31.05:063][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_ColorOnly, compiling. 
+[2017.04.14-01.31.05:066][  0]LogTemp:Display: Added material ShaderMap 0x00000245D7541D00 with Material 0x00000245D6CC2500 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:084][  0]LogTemp:Display: Kicking off shader compilation for VertexColorViewMode_ColorOnly, GameThreadShaderMap 0x00000245D7541D00
+[2017.04.14-01.31.05:162][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_AlphaAsColor, compiling. 
+[2017.04.14-01.31.05:163][  0]LogTemp:Display: Added material ShaderMap 0x00000245D7457900 with Material 0x00000245D6CC0E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:174][  0]LogTemp:Display: Kicking off shader compilation for VertexColorViewMode_AlphaAsColor, GameThreadShaderMap 0x00000245D7457900
+[2017.04.14-01.31.05:214][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_RedOnly, compiling. 
+[2017.04.14-01.31.05:216][  0]LogTemp:Display: Added material ShaderMap 0x00000245D7189280 with Material 0x00000245D712EF80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:234][  0]LogTemp:Display: Kicking off shader compilation for VertexColorViewMode_RedOnly, GameThreadShaderMap 0x00000245D7189280
+[2017.04.14-01.31.05:307][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_GreenOnly, compiling. 
+[2017.04.14-01.31.05:308][  0]LogTemp:Display: Added material ShaderMap 0x00000245D7086B00 with Material 0x00000245D712D780 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:321][  0]LogTemp:Display: Kicking off shader compilation for VertexColorViewMode_GreenOnly, GameThreadShaderMap 0x00000245D7086B00
+[2017.04.14-01.31.05:386][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_BlueOnly, compiling. 
+[2017.04.14-01.31.05:387][  0]LogTemp:Display: Added material ShaderMap 0x00000245D7DD0480 with Material 0x00000245D712C100 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:403][  0]LogTemp:Display: Kicking off shader compilation for VertexColorViewMode_BlueOnly, GameThreadShaderMap 0x00000245D7DD0480
+[2017.04.14-01.31.05:479][  0]LogMaterial: Missing cached shader map for material RemoveSurfaceMaterial, compiling. 
+[2017.04.14-01.31.05:480][  0]LogTemp:Display: Added material ShaderMap 0x00000245D7CE2400 with Material 0x00000245D7D62980 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:488][  0]LogTemp:Display: Kicking off shader compilation for RemoveSurfaceMaterial, GameThreadShaderMap 0x00000245D7CE2400
+[2017.04.14-01.31.05:544][  0]LogMaterial: Missing cached shader map for material DebugMeshMaterial, compiling. 
+[2017.04.14-01.31.05:545][  0]LogTemp:Display: Added material ShaderMap 0x00000245D7C6B580 with Material 0x00000245D7D61480 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:557][  0]LogTemp:Display: Kicking off shader compilation for DebugMeshMaterial, GameThreadShaderMap 0x00000245D7C6B580
+[2017.04.14-01.31.05:712][  0]LogMaterial: Missing cached shader map for material M_InvalidLightmapSettings, compiling. 
+[2017.04.14-01.31.05:713][  0]LogTemp:Display: Added material ShaderMap 0x00000245D8988B80 with Material 0x00000245D892EE00 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:748][  0]LogTemp:Display: Kicking off shader compilation for M_InvalidLightmapSettings, GameThreadShaderMap 0x00000245D8988B80
+[2017.04.14-01.31.05:830][  0]LogMaterial: Missing cached shader map for material GizmoMaterial, compiling. 
+[2017.04.14-01.31.05:831][  0]LogTemp:Display: Added material ShaderMap 0x00000245D846A080 with Material 0x00000245D892D600 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:841][  0]LogTemp:Display: Kicking off shader compilation for GizmoMaterial, GameThreadShaderMap 0x00000245D846A080
+[2017.04.14-01.31.05:868][  0]LogMaterial: Missing cached shader map for material PhAT_JointLimitMaterial, compiling. 
+[2017.04.14-01.31.05:869][  0]LogTemp:Display: Added material ShaderMap 0x00000245D8137C80 with Material 0x00000245D8147A00 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:884][  0]LogTemp:Display: Kicking off shader compilation for PhAT_JointLimitMaterial, GameThreadShaderMap 0x00000245D8137C80
+[2017.04.14-01.31.05:937][  0]LogMaterial: Missing cached shader map for material GeomMaterial, compiling. 
+[2017.04.14-01.31.05:939][  0]LogTemp:Display: Added material ShaderMap 0x00000245D80CCB80 with Material 0x00000245D8087E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.05:955][  0]LogTemp:Display: Kicking off shader compilation for GeomMaterial, GameThreadShaderMap 0x00000245D80CCB80
+[2017.04.14-01.31.06:055][  0]LogMaterial: Missing cached shader map for material EditorBrushMaterial, compiling. 
+[2017.04.14-01.31.06:057][  0]LogTemp:Display: Added material ShaderMap 0x00000245D8D76E80 with Material 0x00000245D8086380 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.06:070][  0]LogTemp:Display: Kicking off shader compilation for EditorBrushMaterial, GameThreadShaderMap 0x00000245D8D76E80
+[2017.04.14-01.31.06:135][  0]LogMaterial: Missing cached shader map for material BoneWeightMaterial, compiling. 
+[2017.04.14-01.31.06:136][  0]LogTemp:Display: Added material ShaderMap 0x00000245D8D20F00 with Material 0x00000245D8084B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.06:239][  0]LogTemp:Display: Kicking off shader compilation for BoneWeightMaterial, GameThreadShaderMap 0x00000245D8D20F00
+[2017.04.14-01.31.06:346][  0]LogMaterial: Missing cached shader map for material PreviewShadowIndicatorMaterial, compiling. 
+[2017.04.14-01.31.06:347][  0]LogTemp:Display: Added material ShaderMap 0x00000245D9065D00 with Material 0x00000245D916CB80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.06:367][  0]LogTemp:Display: Kicking off shader compilation for PreviewShadowIndicatorMaterial, GameThreadShaderMap 0x00000245D9065D00
+[2017.04.14-01.31.07:985][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.14-01.31.08:734][  0]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-01.31.08:991][  0]LogInit: FAudioDevice initialized.
+[2017.04.14-01.31.09:042][  0]LogDerivedDataCache: Saved boot cache 0.05s 44MB C:/Users/Zane/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.14-01.31.09:056][  0]LogInit: Texture streaming: Enabled
+[2017.04.14-01.31.09:824][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.14-01.31.10:440][  0]LogInit: Transaction tracking system initialized
+[2017.04.14-01.31.12:521][  0]BlueprintLog: New page: Editor Load
+[2017.04.14-01.31.16:640][  0]LocalizationService: Info Localization service is disabled
+[2017.04.14-01.31.19:770][  0]LogConsoleResponse:Display: 
+[2017.04.14-01.31.20:963][  0]LogMaterial: Missing cached shader map for material Cross_Mat, compiling. 
+[2017.04.14-01.31.20:965][  0]LogTemp:Display: Added material ShaderMap 0x00000245DA39BC80 with Material 0x00000245DA452200 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.20:985][  0]LogTemp:Display: Kicking off shader compilation for Cross_Mat, GameThreadShaderMap 0x00000245DA39BC80
+[2017.04.14-01.31.21:031][  0]LogMaterial: Missing cached shader map for material PhAT_BoneSelectedMaterial, compiling. 
+[2017.04.14-01.31.21:032][  0]LogTemp:Display: Added material ShaderMap 0x00000245DA2A3200 with Material 0x00000245DA450B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:046][  0]LogTemp:Display: Kicking off shader compilation for PhAT_BoneSelectedMaterial, GameThreadShaderMap 0x00000245DA2A3200
+[2017.04.14-01.31.21:178][  0]LogMaterial: Missing cached shader map for material PhAT_ElemSelectedMaterial, compiling. 
+[2017.04.14-01.31.21:179][  0]LogTemp:Display: Added material ShaderMap 0x00000245DA185D00 with Material 0x00000245DA146F80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:195][  0]LogTemp:Display: Kicking off shader compilation for PhAT_ElemSelectedMaterial, GameThreadShaderMap 0x00000245DA185D00
+[2017.04.14-01.31.21:316][  0]LogMaterial: Missing cached shader map for material PhAT_NoCollisionMaterial, compiling. 
+[2017.04.14-01.31.21:318][  0]LogTemp:Display: Added material ShaderMap 0x00000245DA110800 with Material 0x00000245DA145780 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:331][  0]LogTemp:Display: Kicking off shader compilation for PhAT_NoCollisionMaterial, GameThreadShaderMap 0x00000245DA110800
+[2017.04.14-01.31.21:459][  0]LogMaterial: Missing cached shader map for material PhAT_UnselectedMaterial, compiling. 
+[2017.04.14-01.31.21:460][  0]LogTemp:Display: Added material ShaderMap 0x00000245DA02AE80 with Material 0x00000245DA144100 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:475][  0]LogTemp:Display: Kicking off shader compilation for PhAT_UnselectedMaterial, GameThreadShaderMap 0x00000245DA02AE80
+[2017.04.14-01.31.21:576][  0]LogMaterial: Missing cached shader map for material Tick_Mat, compiling. 
+[2017.04.14-01.31.21:578][  0]LogTemp:Display: Added material ShaderMap 0x00000245D9FC1280 with Material 0x00000245DA006680 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:605][  0]LogTemp:Display: Kicking off shader compilation for Tick_Mat, GameThreadShaderMap 0x00000245D9FC1280
+[2017.04.14-01.31.21:662][  0]LogMaterial: Missing cached shader map for material WidgetGridVertexColorMaterial_Ma, compiling. 
+[2017.04.14-01.31.21:663][  0]LogTemp:Display: Added material ShaderMap 0x00000245B4500480 with Material 0x00000245DA004B80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:675][  0]LogTemp:Display: Kicking off shader compilation for WidgetGridVertexColorMaterial_Ma, GameThreadShaderMap 0x00000245B4500480
+[2017.04.14-01.31.21:749][  0]LogMaterial: Missing cached shader map for material WidgetMaterial, compiling. 
+[2017.04.14-01.31.21:752][  0]LogTemp:Display: Added material ShaderMap 0x00000245B5190F00 with Material 0x00000245B512EB00 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:771][  0]LogTemp:Display: Kicking off shader compilation for WidgetMaterial, GameThreadShaderMap 0x00000245B5190F00
+[2017.04.14-01.31.21:879][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_Current, compiling. 
+[2017.04.14-01.31.21:880][  0]LogTemp:Display: Added material ShaderMap 0x00000245B5100480 with Material 0x00000245B512D480 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:895][  0]LogTemp:Display: Kicking off shader compilation for WidgetMaterial_Current, GameThreadShaderMap 0x00000245B5100480
+[2017.04.14-01.31.21:957][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_X, compiling. 
+[2017.04.14-01.31.21:958][  0]LogTemp:Display: Added material ShaderMap 0x00000245B4DA2B00 with Material 0x00000245B4D77E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.21:972][  0]LogTemp:Display: Kicking off shader compilation for WidgetMaterial_X, GameThreadShaderMap 0x00000245B4DA2B00
+[2017.04.14-01.31.22:074][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_Y, compiling. 
+[2017.04.14-01.31.22:075][  0]LogTemp:Display: Added material ShaderMap 0x00000245B4D1D280 with Material 0x00000245B4D76800 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.22:090][  0]LogTemp:Display: Kicking off shader compilation for WidgetMaterial_Y, GameThreadShaderMap 0x00000245B4D1D280
+[2017.04.14-01.31.22:148][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_Z, compiling. 
+[2017.04.14-01.31.22:150][  0]LogTemp:Display: Added material ShaderMap 0x00000245B4C33C80 with Material 0x00000245B4D75000 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.22:164][  0]LogTemp:Display: Kicking off shader compilation for WidgetMaterial_Z, GameThreadShaderMap 0x00000245B4C33C80
+[2017.04.14-01.31.22:214][  0]LogMaterial: Missing cached shader map for material WidgetVertexColorMaterial, compiling. 
+[2017.04.14-01.31.22:215][  0]LogTemp:Display: Added material ShaderMap 0x00000245B4932400 with Material 0x00000245B48FF880 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.22:229][  0]LogTemp:Display: Kicking off shader compilation for WidgetVertexColorMaterial, GameThreadShaderMap 0x00000245B4932400
+[2017.04.14-01.31.22:427][  0]LogMaterial: Missing cached shader map for material LevelGridMaterial, compiling. 
+[2017.04.14-01.31.22:432][  0]LogTemp:Display: Added material ShaderMap 0x00000245ACCC1280 with Material 0x00000245B9142680 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.22:455][  0]LogTemp:Display: Kicking off shader compilation for LevelGridMaterial, GameThreadShaderMap 0x00000245ACCC1280
+[2017.04.14-01.31.22:669][  0]LogMaterial: Missing cached shader map for material BlinkingCaret, compiling. 
+[2017.04.14-01.31.22:670][  0]LogTemp:Display: Added material ShaderMap 0x00000245B9074100 with Material 0x00000245B911FA00 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.22:683][  0]LogTemp:Display: Kicking off shader compilation for BlinkingCaret, GameThreadShaderMap 0x00000245B9074100
+[2017.04.14-01.31.23:032][  0]LogMaterial: Missing cached shader map for material M_StreamingPause, compiling. 
+[2017.04.14-01.31.23:034][  0]LogTemp:Display: Added material ShaderMap 0x00000245B9CE2B00 with Material 0x00000245B48FDD80 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.23:046][  0]LogTemp:Display: Kicking off shader compilation for M_StreamingPause, GameThreadShaderMap 0x00000245B9CE2B00
+[2017.04.14-01.31.23:531][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/' took 0.03s
+[2017.04.14-01.31.23:531][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.14-01.31.23:531][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.14-01.31.27:498][  0]SourceControl: Info Source control is disabled
+[2017.04.14-01.31.27:560][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/VirtualRealityBP/Maps/StartupMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.14-01.31.27:708][  0]LightingResults: New page: Lighting Build
+[2017.04.14-01.31.28:143][  0]MapCheck: New page: Map Check
+[2017.04.14-01.31.28:143][  0]LightingResults: New page: Lighting Build
+[2017.04.14-01.31.30:120][  0]LogAIModule: Creating AISystem for world StartupMap
+[2017.04.14-01.31.30:242][  0]LogTemp:Display: Finished compile of shader map 0x00000245AE0A5280
+[2017.04.14-01.31.30:242][  0]LogTemp:Display: Shader map M_ContentWindow complete, GameThreadShaderMap 0x00000245AE0A5280, marking material M_ContentWindow as finished
+[2017.04.14-01.31.30:242][  0]LogTemp:Display: Marking material as finished 0x00000245ADDCFE80
+[2017.04.14-01.31.30:252][  0]LogTemp:Display: Finished compile of shader map 0x00000245AA632B00
+[2017.04.14-01.31.30:252][  0]LogTemp:Display: Shader map TransformGizmoMaterial complete, GameThreadShaderMap 0x00000245AA632B00, marking material TransformGizmoMaterial as finished
+[2017.04.14-01.31.30:253][  0]LogTemp:Display: Marking material as finished 0x00000245AF208700
+[2017.04.14-01.31.30:259][  0]LogTemp:Display: Finished compile of shader map 0x00000245A4EFEE80
+[2017.04.14-01.31.30:260][  0]LogTemp:Display: Shader map TranslucentTransformGizmoMaterial complete, GameThreadShaderMap 0x00000245A4EFEE80, marking material TranslucentTransformGizmoMaterial as finished
+[2017.04.14-01.31.30:260][  0]LogTemp:Display: Marking material as finished 0x00000245AB8DB580
+[2017.04.14-01.31.30:265][  0]LogTemp:Display: Finished compile of shader map 0x000002458840EE80
+[2017.04.14-01.31.30:265][  0]LogTemp:Display: Shader map LineMaterial complete, GameThreadShaderMap 0x000002458840EE80, marking material LineMaterial as finished
+[2017.04.14-01.31.30:265][  0]LogTemp:Display: Marking material as finished 0x00000245AF0FE680
+[2017.04.14-01.31.30:272][  0]LogTemp:Display: Finished compile of shader map 0x00000245A9532B00
+[2017.04.14-01.31.30:272][  0]LogTemp:Display: Shader map VRTextMaterial complete, GameThreadShaderMap 0x00000245A9532B00, marking material VRTextMaterial as finished
+[2017.04.14-01.31.30:272][  0]LogTemp:Display: Marking material as finished 0x00000245AB193E80
+[2017.04.14-01.31.30:291][  0]LogTemp:Display: Finished compile of shader map 0x00000245AF11E080
+[2017.04.14-01.31.30:291][  0]LogTemp:Display: Shader map DefaultTextMaterialOpaque complete, GameThreadShaderMap 0x00000245AF11E080, marking material DefaultTextMaterialOpaque as finished
+[2017.04.14-01.31.30:291][  0]LogTemp:Display: Marking material as finished 0x00000245AB190400
+[2017.04.14-01.31.30:300][  0]LogTemp:Display: Finished compile of shader map 0x00000245AD198B80
+[2017.04.14-01.31.30:300][  0]LogTemp:Display: Shader map GenericHMDMaterial complete, GameThreadShaderMap 0x00000245AD198B80, marking material GenericHMDMaterial as finished
+[2017.04.14-01.31.30:300][  0]LogTemp:Display: Marking material as finished 0x00000245AE9B3880
+[2017.04.14-01.31.30:309][  0]LogTemp:Display: Finished compile of shader map 0x00000245AF61EE80
+[2017.04.14-01.31.30:309][  0]LogTemp:Display: Shader map FlattenHeightMat complete, GameThreadShaderMap 0x00000245AF61EE80, marking material FlattenHeightMat as finished
+[2017.04.14-01.31.30:309][  0]LogTemp:Display: Marking material as finished 0x00000245AEA55300
+[2017.04.14-01.31.30:314][  0]LogTemp:Display: Finished compile of shader map 0x00000245AA213C80
+[2017.04.14-01.31.30:315][  0]LogTemp:Display: Shader map GridMaterial complete, GameThreadShaderMap 0x00000245AA213C80, marking material GridMaterial as finished
+[2017.04.14-01.31.30:315][  0]LogTemp:Display: Marking material as finished 0x00000245AA22AB00
+[2017.04.14-01.31.30:321][  0]LogTemp:Display: Finished compile of shader map 0x00000245AA12E400
+[2017.04.14-01.31.30:321][  0]LogTemp:Display: Shader map LaserPointerMaterial complete, GameThreadShaderMap 0x00000245AA12E400, marking material LaserPointerMaterial as finished
+[2017.04.14-01.31.30:321][  0]LogTemp:Display: Marking material as finished 0x00000245AA0F7B80
+[2017.04.14-01.31.30:325][  0]LogTemp:Display: Finished compile of shader map 0x00000245AD9CA780
+[2017.04.14-01.31.30:325][  0]LogTemp:Display: Shader map GridPostProcess complete, GameThreadShaderMap 0x00000245AD9CA780, marking material GridPostProcess as finished
+[2017.04.14-01.31.30:325][  0]LogTemp:Display: Marking material as finished 0x00000245AD976980
+[2017.04.14-01.31.30:337][  0]LogTemp:Display: Finished compile of shader map 0x00000245AFE54F00
+[2017.04.14-01.31.30:337][  0]LogTemp:Display: Shader map CineMat complete, GameThreadShaderMap 0x00000245AFE54F00, marking material CineMat as finished
+[2017.04.14-01.31.30:337][  0]LogTemp:Display: Marking material as finished 0x00000245ADD75480
+[2017.04.14-01.31.30:348][  0]LogTemp:Display: Finished compile of shader map 0x00000245AC1A8B80
+[2017.04.14-01.31.30:348][  0]LogTemp:Display: Shader map MatineeCam_mat complete, GameThreadShaderMap 0x00000245AC1A8B80, marking material MatineeCam_mat as finished
+[2017.04.14-01.31.30:348][  0]LogTemp:Display: Marking material as finished 0x00000245AC176380
+[2017.04.14-01.31.30:357][  0]LogTemp:Display: Finished compile of shader map 0x00000245AA4D6E80
+[2017.04.14-01.31.30:357][  0]LogTemp:Display: Shader map M_SimpleOpaque complete, GameThreadShaderMap 0x00000245AA4D6E80, marking material M_SimpleOpaque as finished
+[2017.04.14-01.31.30:357][  0]LogTemp:Display: Marking material as finished 0x00000245AA4C5480
+[2017.04.14-01.31.30:368][  0]LogTemp:Display: Finished compile of shader map 0x00000245B0218B80
+[2017.04.14-01.31.30:368][  0]LogTemp:Display: Shader map M_SimpleTranslucent complete, GameThreadShaderMap 0x00000245B0218B80, marking material M_SimpleTranslucent as finished
+[2017.04.14-01.31.30:368][  0]LogTemp:Display: Marking material as finished 0x00000245B01CBA00
+[2017.04.14-01.31.30:372][  0]LogTemp:Display: Finished compile of shader map 0x00000245B288FC80
+[2017.04.14-01.31.30:372][  0]LogTemp:Display: Shader map SkySphereMaterial complete, GameThreadShaderMap 0x00000245B288FC80, marking material SkySphereMaterial as finished
+[2017.04.14-01.31.30:373][  0]LogTemp:Display: Marking material as finished 0x00000245B28AAF80
+[2017.04.14-01.31.30:387][  0]LogTemp:Display: Finished compile of shader map 0x00000245B288C800
+[2017.04.14-01.31.30:387][  0]LogTemp:Display: Shader map FloorPlaneMaterial complete, GameThreadShaderMap 0x00000245B288C800, marking material FloorPlaneMaterial as finished
+[2017.04.14-01.31.30:387][  0]LogTemp:Display: Marking material as finished 0x00000245B28A9180
+[2017.04.14-01.31.30:394][  0]LogTemp:Display: Finished compile of shader map 0x00000245B3364F00
+[2017.04.14-01.31.30:394][  0]LogTemp:Display: Shader map LandscapeGizmo_Mat complete, GameThreadShaderMap 0x00000245B3364F00, marking material LandscapeGizmo_Mat as finished
+[2017.04.14-01.31.30:394][  0]LogTemp:Display: Marking material as finished 0x00000245B3511900
+[2017.04.14-01.31.30:395][  0]LogTemp:Display: Shader map LandscapeGizmo_Mat complete, GameThreadShaderMap 0x00000245B3364F00, marking material LandscapeGizmo_Mat as finished
+[2017.04.14-01.31.30:395][  0]LogTemp:Display: Marking material as finished 0x00000245B2C63880
+[2017.04.14-01.31.30:421][  0]LogTemp:Display: Finished compile of shader map 0x00000245B2C4B200
+[2017.04.14-01.31.30:421][  0]LogTemp:Display: Shader map LandscapeGizmoHeight_Mat complete, GameThreadShaderMap 0x00000245B2C4B200, marking material LandscapeGizmoHeight_Mat as finished
+[2017.04.14-01.31.30:421][  0]LogTemp:Display: Marking material as finished 0x00000245B2C62080
+[2017.04.14-01.31.30:430][  0]LogTemp:Display: Finished compile of shader map 0x00000245B7B32E80
+[2017.04.14-01.31.30:430][  0]LogTemp:Display: Shader map SplineEditorMeshMat complete, GameThreadShaderMap 0x00000245B7B32E80, marking material SplineEditorMeshMat as finished
+[2017.04.14-01.31.30:430][  0]LogTemp:Display: Marking material as finished 0x00000245B2C50B80
+[2017.04.14-01.31.30:448][  0]LogTemp:Display: Finished compile of shader map 0x00000245B8916780
+[2017.04.14-01.31.30:448][  0]LogTemp:Display: Shader map HelpActorMaterial complete, GameThreadShaderMap 0x00000245B8916780, marking material HelpActorMaterial as finished
+[2017.04.14-01.31.30:448][  0]LogTemp:Display: Marking material as finished 0x00000245B88EBD00
+[2017.04.14-01.31.30:467][  0]LogTemp:Display: Finished compile of shader map 0x00000245BD507200
+[2017.04.14-01.31.30:467][  0]LogTemp:Display: Shader map DefaultMaterial complete, GameThreadShaderMap 0x00000245BD507200, marking material DefaultMaterial as finished
+[2017.04.14-01.31.30:467][  0]LogTemp:Display: Marking material as finished 0x00000245BD554E80
+[2017.04.14-01.31.30:479][  0]LogTemp:Display: Finished compile of shader map 0x00000245BDB7F900
+[2017.04.14-01.31.30:479][  0]LogTemp:Display: Shader map BaseColor complete, GameThreadShaderMap 0x00000245BDB7F900, marking material BaseColor as finished
+[2017.04.14-01.31.30:479][  0]LogTemp:Display: Marking material as finished 0x00000245BDADE800
+[2017.04.14-01.31.30:482][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE987C80
+[2017.04.14-01.31.30:482][  0]LogTemp:Display: Shader map CustomDepth complete, GameThreadShaderMap 0x00000245BE987C80, marking material CustomDepth as finished
+[2017.04.14-01.31.30:482][  0]LogTemp:Display: Marking material as finished 0x00000245BDADCD00
+[2017.04.14-01.31.30:489][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE912080
+[2017.04.14-01.31.30:489][  0]LogTemp:Display: Shader map CustomStencil complete, GameThreadShaderMap 0x00000245BE912080, marking material CustomStencil as finished
+[2017.04.14-01.31.30:489][  0]LogTemp:Display: Marking material as finished 0x00000245BE8EA680
+[2017.04.14-01.31.30:494][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE87A780
+[2017.04.14-01.31.30:494][  0]LogTemp:Display: Shader map FinalImage complete, GameThreadShaderMap 0x00000245BE87A780, marking material FinalImage as finished
+[2017.04.14-01.31.30:494][  0]LogTemp:Display: Marking material as finished 0x00000245BE8C6500
+[2017.04.14-01.31.30:500][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE802E80
+[2017.04.14-01.31.30:500][  0]LogTemp:Display: Shader map LightingModel complete, GameThreadShaderMap 0x00000245BE802E80, marking material LightingModel as finished
+[2017.04.14-01.31.30:500][  0]LogTemp:Display: Marking material as finished 0x00000245BE8C4880
+[2017.04.14-01.31.30:506][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE77B580
+[2017.04.14-01.31.30:506][  0]LogTemp:Display: Shader map MaterialAO complete, GameThreadShaderMap 0x00000245BE77B580, marking material MaterialAO as finished
+[2017.04.14-01.31.30:506][  0]LogTemp:Display: Marking material as finished 0x00000245BE776980
+[2017.04.14-01.31.30:512][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE6EFC80
+[2017.04.14-01.31.30:512][  0]LogTemp:Display: Shader map Metallic complete, GameThreadShaderMap 0x00000245BE6EFC80, marking material Metallic as finished
+[2017.04.14-01.31.30:512][  0]LogTemp:Display: Marking material as finished 0x00000245BE775000
+[2017.04.14-01.31.30:516][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE6EC480
+[2017.04.14-01.31.30:516][  0]LogTemp:Display: Shader map Opacity complete, GameThreadShaderMap 0x00000245BE6EC480, marking material Opacity as finished
+[2017.04.14-01.31.30:516][  0]LogTemp:Display: Marking material as finished 0x00000245BE68AF80
+[2017.04.14-01.31.30:522][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE664B80
+[2017.04.14-01.31.30:522][  0]LogTemp:Display: Shader map Roughness complete, GameThreadShaderMap 0x00000245BE664B80, marking material Roughness as finished
+[2017.04.14-01.31.30:522][  0]LogTemp:Display: Marking material as finished 0x00000245BE689480
+[2017.04.14-01.31.30:526][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE565280
+[2017.04.14-01.31.30:526][  0]LogTemp:Display: Shader map SceneColor complete, GameThreadShaderMap 0x00000245BE565280, marking material SceneColor as finished
+[2017.04.14-01.31.30:526][  0]LogTemp:Display: Marking material as finished 0x00000245BE51B700
+[2017.04.14-01.31.30:530][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE4F1600
+[2017.04.14-01.31.30:530][  0]LogTemp:Display: Shader map SceneDepth complete, GameThreadShaderMap 0x00000245BE4F1600, marking material SceneDepth as finished
+[2017.04.14-01.31.30:530][  0]LogTemp:Display: Marking material as finished 0x00000245BE519C00
+[2017.04.14-01.31.30:535][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE46D980
+[2017.04.14-01.31.30:535][  0]LogTemp:Display: Shader map SeparateTranslucencyRGB complete, GameThreadShaderMap 0x00000245BE46D980, marking material SeparateTranslucencyRGB as finished
+[2017.04.14-01.31.30:535][  0]LogTemp:Display: Marking material as finished 0x00000245BE42FD00
+[2017.04.14-01.31.30:542][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE3EA080
+[2017.04.14-01.31.30:542][  0]LogTemp:Display: Shader map SeparateTranslucencyA complete, GameThreadShaderMap 0x00000245BE3EA080, marking material SeparateTranslucencyA as finished
+[2017.04.14-01.31.30:542][  0]LogTemp:Display: Marking material as finished 0x00000245BE42DF00
+[2017.04.14-01.31.30:547][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE37A780
+[2017.04.14-01.31.30:547][  0]LogTemp:Display: Shader map Specular complete, GameThreadShaderMap 0x00000245BE37A780, marking material Specular as finished
+[2017.04.14-01.31.30:547][  0]LogTemp:Display: Marking material as finished 0x00000245BE42C100
+[2017.04.14-01.31.30:554][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE1AAE80
+[2017.04.14-01.31.30:554][  0]LogTemp:Display: Shader map SubsurfaceColor complete, GameThreadShaderMap 0x00000245BE1AAE80, marking material SubsurfaceColor as finished
+[2017.04.14-01.31.30:554][  0]LogTemp:Display: Marking material as finished 0x00000245BE34A500
+[2017.04.14-01.31.30:560][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE127200
+[2017.04.14-01.31.30:560][  0]LogTemp:Display: Shader map WorldNormal complete, GameThreadShaderMap 0x00000245BE127200, marking material WorldNormal as finished
+[2017.04.14-01.31.30:560][  0]LogTemp:Display: Marking material as finished 0x00000245BE348B80
+[2017.04.14-01.31.30:565][  0]LogTemp:Display: Finished compile of shader map 0x00000245BE0AB900
+[2017.04.14-01.31.30:565][  0]LogTemp:Display: Shader map AmbientOcclusion complete, GameThreadShaderMap 0x00000245BE0AB900, marking material AmbientOcclusion as finished
+[2017.04.14-01.31.30:565][  0]LogTemp:Display: Marking material as finished 0x00000245BE0BA800
+[2017.04.14-01.31.30:573][  0]LogTemp:Display: Finished compile of shader map 0x00000245BEDDCF00
+[2017.04.14-01.31.30:573][  0]LogTemp:Display: Shader map CustomDepthWorldUnits complete, GameThreadShaderMap 0x00000245BEDDCF00, marking material CustomDepthWorldUnits as finished
+[2017.04.14-01.31.30:573][  0]LogTemp:Display: Marking material as finished 0x00000245BE0B8580
+[2017.04.14-01.31.30:577][  0]LogTemp:Display: Finished compile of shader map 0x00000245BED7D280
+[2017.04.14-01.31.30:577][  0]LogTemp:Display: Shader map SceneDepthWorldUnits complete, GameThreadShaderMap 0x00000245BED7D280, marking material SceneDepthWorldUnits as finished
+[2017.04.14-01.31.30:577][  0]LogTemp:Display: Marking material as finished 0x00000245BEDA2380
+[2017.04.14-01.31.30:581][  0]LogTemp:Display: Finished compile of shader map 0x00000245BED14480
+[2017.04.14-01.31.30:581][  0]LogTemp:Display: Shader map PreTonemapHDRColor complete, GameThreadShaderMap 0x00000245BED14480, marking material PreTonemapHDRColor as finished
+[2017.04.14-01.31.30:581][  0]LogTemp:Display: Marking material as finished 0x00000245BEDA0700
+[2017.04.14-01.31.30:584][  0]LogTemp:Display: Finished compile of shader map 0x00000245BECA8480
+[2017.04.14-01.31.30:584][  0]LogTemp:Display: Shader map PostTonemapHDRColor complete, GameThreadShaderMap 0x00000245BECA8480, marking material PostTonemapHDRColor as finished
+[2017.04.14-01.31.30:584][  0]LogTemp:Display: Marking material as finished 0x00000245BECB2680
+[2017.04.14-01.31.30:589][  0]LogTemp:Display: Finished compile of shader map 0x00000245BF463900
+[2017.04.14-01.31.30:589][  0]LogTemp:Display: Shader map HighResScreenshot complete, GameThreadShaderMap 0x00000245BF463900, marking material HighResScreenshot as finished
+[2017.04.14-01.31.30:589][  0]LogTemp:Display: Marking material as finished 0x00000245BF43DA80
+[2017.04.14-01.31.30:595][  0]LogTemp:Display: Finished compile of shader map 0x00000245BF1D8F00
+[2017.04.14-01.31.30:595][  0]LogTemp:Display: Shader map HighResScreenshotMask complete, GameThreadShaderMap 0x00000245BF1D8F00, marking material HighResScreenshotMask as finished
+[2017.04.14-01.31.30:595][  0]LogTemp:Display: Marking material as finished 0x00000245BF197880
+[2017.04.14-01.31.30:600][  0]LogTemp:Display: Finished compile of shader map 0x00000245BF102780
+[2017.04.14-01.31.30:600][  0]LogTemp:Display: Shader map HighResScreenshotCaptureRegion complete, GameThreadShaderMap 0x00000245BF102780, marking material HighResScreenshotCaptureRegion as finished
+[2017.04.14-01.31.30:600][  0]LogTemp:Display: Marking material as finished 0x00000245BF195A80
+[2017.04.14-01.31.30:665][  0]LogTemp:Display: Finished compile of shader map 0x00000245BF082080
+[2017.04.14-01.31.30:665][  0]LogTemp:Display: Shader map WireframeMaterial complete, GameThreadShaderMap 0x00000245BF082080, marking material WireframeMaterial as finished
+[2017.04.14-01.31.30:665][  0]LogTemp:Display: Marking material as finished 0x00000245BF0C6200
+[2017.04.14-01.31.31:879][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.14-01.31.31:962][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.14-01.31.32:062][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 99.196ms to complete.
+[2017.04.14-01.31.32:062][  0]LogFileHelpers: Loading map 'StartupMap' took 4.536
+[2017.04.14-01.31.33:232][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.14-01.31.34:587][  0]LogCollectionManager: Loaded 0 collections in 0.002936 seconds
+[2017.04.14-01.31.34:955][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Collections/' took 0.01s
+[2017.04.14-01.31.34:955][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/Developers/Zane/Collections/' took 0.01s
+[2017.04.14-01.31.34:955][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/Collections/' took 0.01s
+[2017.04.14-01.31.34:955][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
+[2017.04.14-01.31.34:991][  0]LogContentBrowser: Native class hierarchy populated in 0.0333 seconds. Added 2245 classes and 453 folders.
+[2017.04.14-01.31.35:137][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.011 s
+[2017.04.14-01.31.35:150][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.012 s
+[2017.04.14-01.31.35:492][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.04.14-01.31.36:668][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.04.14-01.31.36:937][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2017.04.14-01.31.37:699][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.14-01.31.38:734][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.04.14-01.31.38:734][  0]LogLoad: (Engine Initialization) Total time: 221.75 seconds
+[2017.04.14-01.31.38:734][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.68 seconds
+[2017.04.14-01.31.38:734][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.14-01.31.38:734][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.14-01.31.38:843][  0]LogOcInput: OculusInput pre-init called
+[2017.04.14-01.31.39:271][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.14-01.31.39:973][  0]LogSlate: Took 0.016649 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.14-01.31.40:006][  0]LogSlate: Took 0.025718 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.14-01.31.40:073][  0]LogSlate: Took 0.021568 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.14-01.31.40:766][  0]LogMaterial: Missing cached shader map for material LevelGridMaterial2, compiling. 
+[2017.04.14-01.31.40:769][  0]LogTemp:Display: Added material ShaderMap 0x00000245ACE4F200 with Material 0x00000245ACE5A800 to ShaderMapsBeingCompiled
+[2017.04.14-01.31.40:788][  0]LogTemp:Display: Kicking off shader compilation for LevelGridMaterial2, GameThreadShaderMap 0x00000245ACE4F200
+[2017.04.14-01.31.41:199][  0]LogRenderer: Reallocating scene render targets to support 924x460 NumSamples 1 (Frame:2).
+[2017.04.14-01.31.41:199][  0]LogSlate: Took 0.033433 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.14-01.31.43:378][  2]LogSlate: Took 0.000445 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.14-01.31.43:439][  3]LogAssetRegistry: Asset discovery search completed in 111.4096 seconds
+[2017.04.14-01.31.43:439][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000018 seconds (found 0 objects)
+[2017.04.14-01.31.43:439][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000051 seconds (updated 0 objects)
+[2017.04.14-01.32.43:218][460]LogTemp:Display: Finished compile of shader map 0x00000245C1CFD980
+[2017.04.14-01.32.43:218][460]LogTemp:Display: Shader map LevelColorationLitMaterial complete, GameThreadShaderMap 0x00000245C1CFD980, marking material LevelColorationLitMaterial as finished
+[2017.04.14-01.32.43:218][460]LogTemp:Display: Marking material as finished 0x00000245C1CD7B80
+[2017.04.14-01.33.22:571][411]LogTemp:Display: Finished compile of shader map 0x00000245C7087200
+[2017.04.14-01.33.22:571][411]LogTemp:Display: Shader map LevelColorationUnlitMaterial complete, GameThreadShaderMap 0x00000245C7087200, marking material LevelColorationUnlitMaterial as finished
+[2017.04.14-01.33.22:571][411]LogTemp:Display: Marking material as finished 0x00000245C51E0B80
+[2017.04.14-01.35.33:414][608]LogTemp:Display: Finished compile of shader map 0x00000245C9460480
+[2017.04.14-01.35.33:414][608]LogTemp:Display: Shader map MAT_LevelColorationLitLightmapUV complete, GameThreadShaderMap 0x00000245C9460480, marking material MAT_LevelColorationLitLightmapUV as finished
+[2017.04.14-01.35.33:414][608]LogTemp:Display: Marking material as finished 0x00000245C942EF80
+[2017.04.14-01.37.40:148][728]LogTemp:Display: Finished compile of shader map 0x00000245CF5D1600
+[2017.04.14-01.37.40:148][728]LogTemp:Display: Shader map ShadedLevelColorationLitMaterial complete, GameThreadShaderMap 0x00000245CF5D1600, marking material ShadedLevelColorationLitMaterial as finished
+[2017.04.14-01.37.40:148][728]LogTemp:Display: Marking material as finished 0x00000245CD9CC580
+[2017.04.14-01.38.15:398][603]LogTemp:Display: Finished compile of shader map 0x00000245D58FEE80
+[2017.04.14-01.38.15:398][603]LogTemp:Display: Shader map ShadedLevelColorationUnlitMateri complete, GameThreadShaderMap 0x00000245D58FEE80, marking material ShadedLevelColorationUnlitMateri as finished
+[2017.04.14-01.38.15:398][603]LogTemp:Display: Marking material as finished 0x00000245D2C94E80
+[2017.04.14-01.38.24:901][838]LogTemp:Display: Finished compile of shader map 0x00000245D7541D00
+[2017.04.14-01.38.24:901][838]LogTemp:Display: Shader map VertexColorViewMode_ColorOnly complete, GameThreadShaderMap 0x00000245D7541D00, marking material VertexColorViewMode_ColorOnly as finished
+[2017.04.14-01.38.24:901][838]LogTemp:Display: Marking material as finished 0x00000245D6CC2500
+[2017.04.14-01.38.26:719][883]LogTemp:Display: Finished compile of shader map 0x00000245D7457900
+[2017.04.14-01.38.26:719][883]LogTemp:Display: Shader map VertexColorViewMode_AlphaAsColor complete, GameThreadShaderMap 0x00000245D7457900, marking material VertexColorViewMode_AlphaAsColor as finished
+[2017.04.14-01.38.26:719][883]LogTemp:Display: Marking material as finished 0x00000245D6CC0E80
+[2017.04.14-01.38.26:741][883]LogTemp:Display: Finished compile of shader map 0x00000245D6CF1D00
+[2017.04.14-01.38.26:742][883]LogTemp:Display: Shader map VertexColorMaterial complete, GameThreadShaderMap 0x00000245D6CF1D00, marking material VertexColorMaterial as finished
+[2017.04.14-01.38.26:742][883]LogTemp:Display: Marking material as finished 0x00000245D6CC3E80
+[2017.04.14-01.38.30:176][967]LogTemp:Display: Finished compile of shader map 0x00000245D7189280
+[2017.04.14-01.38.30:176][967]LogTemp:Display: Shader map VertexColorViewMode_RedOnly complete, GameThreadShaderMap 0x00000245D7189280, marking material VertexColorViewMode_RedOnly as finished
+[2017.04.14-01.38.30:176][967]LogTemp:Display: Marking material as finished 0x00000245D712EF80
+[2017.04.14-01.38.31:113][990]LogTemp:Display: Finished compile of shader map 0x00000245D7086B00
+[2017.04.14-01.38.31:113][990]LogTemp:Display: Shader map VertexColorViewMode_GreenOnly complete, GameThreadShaderMap 0x00000245D7086B00, marking material VertexColorViewMode_GreenOnly as finished
+[2017.04.14-01.38.31:113][990]LogTemp:Display: Marking material as finished 0x00000245D712D780
+[2017.04.14-01.38.33:166][ 40]LogTemp:Display: Finished compile of shader map 0x00000245D7CE2400
+[2017.04.14-01.38.33:166][ 40]LogTemp:Display: Shader map RemoveSurfaceMaterial complete, GameThreadShaderMap 0x00000245D7CE2400, marking material RemoveSurfaceMaterial as finished
+[2017.04.14-01.38.33:167][ 40]LogTemp:Display: Marking material as finished 0x00000245D7D62980
+[2017.04.14-01.38.33:186][ 40]LogTemp:Display: Finished compile of shader map 0x00000245D7DD0480
+[2017.04.14-01.38.33:186][ 40]LogTemp:Display: Shader map VertexColorViewMode_BlueOnly complete, GameThreadShaderMap 0x00000245D7DD0480, marking material VertexColorViewMode_BlueOnly as finished
+[2017.04.14-01.38.33:186][ 40]LogTemp:Display: Marking material as finished 0x00000245D712C100
+[2017.04.14-01.38.35:068][ 87]LogTemp:Display: Finished compile of shader map 0x00000245D7C6B580
+[2017.04.14-01.38.35:068][ 87]LogTemp:Display: Shader map DebugMeshMaterial complete, GameThreadShaderMap 0x00000245D7C6B580, marking material DebugMeshMaterial as finished
+[2017.04.14-01.38.35:068][ 87]LogTemp:Display: Marking material as finished 0x00000245D7D61480
+[2017.04.14-01.38.42:938][280]LogTemp:Display: Finished compile of shader map 0x00000245D846A080
+[2017.04.14-01.38.42:938][280]LogTemp:Display: Shader map GizmoMaterial complete, GameThreadShaderMap 0x00000245D846A080, marking material GizmoMaterial as finished
+[2017.04.14-01.38.42:938][280]LogTemp:Display: Marking material as finished 0x00000245D892D600
+[2017.04.14-01.38.43:032][282]LogTemp:Display: Finished compile of shader map 0x00000245D8988B80
+[2017.04.14-01.38.43:032][282]LogTemp:Display: Shader map M_InvalidLightmapSettings complete, GameThreadShaderMap 0x00000245D8988B80, marking material M_InvalidLightmapSettings as finished
+[2017.04.14-01.38.43:032][282]LogTemp:Display: Marking material as finished 0x00000245D892EE00
+[2017.04.14-01.38.47:446][393]LogTemp:Display: Finished compile of shader map 0x00000245D8137C80
+[2017.04.14-01.38.47:446][393]LogTemp:Display: Shader map PhAT_JointLimitMaterial complete, GameThreadShaderMap 0x00000245D8137C80, marking material PhAT_JointLimitMaterial as finished
+[2017.04.14-01.38.47:446][393]LogTemp:Display: Marking material as finished 0x00000245D8147A00
+[2017.04.14-01.38.47:752][401]LogTemp:Display: Finished compile of shader map 0x00000245D8D76E80
+[2017.04.14-01.38.47:752][401]LogTemp:Display: Shader map EditorBrushMaterial complete, GameThreadShaderMap 0x00000245D8D76E80, marking material EditorBrushMaterial as finished
+[2017.04.14-01.38.47:752][401]LogTemp:Display: Marking material as finished 0x00000245D8086380
+[2017.04.14-01.38.47:775][401]LogTemp:Display: Finished compile of shader map 0x00000245D80CCB80
+[2017.04.14-01.38.47:775][401]LogTemp:Display: Shader map GeomMaterial complete, GameThreadShaderMap 0x00000245D80CCB80, marking material GeomMaterial as finished
+[2017.04.14-01.38.47:775][401]LogTemp:Display: Marking material as finished 0x00000245D8087E80
+[2017.04.14-01.39.22:854][262]LogTemp:Display: Finished compile of shader map 0x00000245D8D20F00
+[2017.04.14-01.39.22:854][262]LogTemp:Display: Shader map BoneWeightMaterial complete, GameThreadShaderMap 0x00000245D8D20F00, marking material BoneWeightMaterial as finished
+[2017.04.14-01.39.22:854][262]LogTemp:Display: Marking material as finished 0x00000245D8084B80
+[2017.04.14-01.39.24:408][300]LogTemp:Display: Finished compile of shader map 0x00000245D9065D00
+[2017.04.14-01.39.24:409][300]LogTemp:Display: Shader map PreviewShadowIndicatorMaterial complete, GameThreadShaderMap 0x00000245D9065D00, marking material PreviewShadowIndicatorMaterial as finished
+[2017.04.14-01.39.24:409][300]LogTemp:Display: Marking material as finished 0x00000245D916CB80
+[2017.04.14-01.39.28:995][416]LogTemp:Display: Finished compile of shader map 0x00000245DA39BC80
+[2017.04.14-01.39.28:995][416]LogTemp:Display: Shader map Cross_Mat complete, GameThreadShaderMap 0x00000245DA39BC80, marking material Cross_Mat as finished
+[2017.04.14-01.39.28:995][416]LogTemp:Display: Marking material as finished 0x00000245DA452200
+[2017.04.14-01.39.32:687][507]LogTemp:Display: Finished compile of shader map 0x00000245DA185D00
+[2017.04.14-01.39.32:687][507]LogTemp:Display: Shader map PhAT_ElemSelectedMaterial complete, GameThreadShaderMap 0x00000245DA185D00, marking material PhAT_ElemSelectedMaterial as finished
+[2017.04.14-01.39.32:687][507]LogTemp:Display: Marking material as finished 0x00000245DA146F80
+[2017.04.14-01.39.32:703][507]LogTemp:Display: Finished compile of shader map 0x00000245DA2A3200
+[2017.04.14-01.39.32:704][507]LogTemp:Display: Shader map PhAT_BoneSelectedMaterial complete, GameThreadShaderMap 0x00000245DA2A3200, marking material PhAT_BoneSelectedMaterial as finished
+[2017.04.14-01.39.32:704][507]LogTemp:Display: Marking material as finished 0x00000245DA450B80
+[2017.04.14-01.39.33:313][522]LogTemp:Display: Finished compile of shader map 0x00000245DA110800
+[2017.04.14-01.39.33:314][522]LogTemp:Display: Shader map PhAT_NoCollisionMaterial complete, GameThreadShaderMap 0x00000245DA110800, marking material PhAT_NoCollisionMaterial as finished
+[2017.04.14-01.39.33:314][522]LogTemp:Display: Marking material as finished 0x00000245DA145780
+[2017.04.14-01.39.36:541][601]LogTemp:Display: Finished compile of shader map 0x00000245DA02AE80
+[2017.04.14-01.39.36:542][601]LogTemp:Display: Shader map PhAT_UnselectedMaterial complete, GameThreadShaderMap 0x00000245DA02AE80, marking material PhAT_UnselectedMaterial as finished
+[2017.04.14-01.39.36:542][601]LogTemp:Display: Marking material as finished 0x00000245DA144100
+[2017.04.14-01.39.38:998][662]LogTemp:Display: Finished compile of shader map 0x00000245D9FC1280
+[2017.04.14-01.39.38:998][662]LogTemp:Display: Shader map Tick_Mat complete, GameThreadShaderMap 0x00000245D9FC1280, marking material Tick_Mat as finished
+[2017.04.14-01.39.38:999][662]LogTemp:Display: Marking material as finished 0x00000245DA006680
+[2017.04.14-01.39.41:593][726]LogTemp:Display: Finished compile of shader map 0x00000245B4500480
+[2017.04.14-01.39.41:593][726]LogTemp:Display: Shader map WidgetGridVertexColorMaterial_Ma complete, GameThreadShaderMap 0x00000245B4500480, marking material WidgetGridVertexColorMaterial_Ma as finished
+[2017.04.14-01.39.41:593][726]LogTemp:Display: Marking material as finished 0x00000245DA004B80
+[2017.04.14-01.39.42:567][750]LogTemp:Display: Finished compile of shader map 0x00000245B5190F00
+[2017.04.14-01.39.42:567][750]LogTemp:Display: Shader map WidgetMaterial complete, GameThreadShaderMap 0x00000245B5190F00, marking material WidgetMaterial as finished
+[2017.04.14-01.39.42:567][750]LogTemp:Display: Marking material as finished 0x00000245B512EB00
+[2017.04.14-01.39.44:029][786]LogTemp:Display: Finished compile of shader map 0x00000245B5100480
+[2017.04.14-01.39.44:029][786]LogTemp:Display: Shader map WidgetMaterial_Current complete, GameThreadShaderMap 0x00000245B5100480, marking material WidgetMaterial_Current as finished
+[2017.04.14-01.39.44:029][786]LogTemp:Display: Marking material as finished 0x00000245B512D480
+[2017.04.14-01.39.45:143][814]LogTemp:Display: Finished compile of shader map 0x00000245B4DA2B00
+[2017.04.14-01.39.45:143][814]LogTemp:Display: Shader map WidgetMaterial_X complete, GameThreadShaderMap 0x00000245B4DA2B00, marking material WidgetMaterial_X as finished
+[2017.04.14-01.39.45:143][814]LogTemp:Display: Marking material as finished 0x00000245B4D77E80
+[2017.04.14-01.39.47:664][876]LogTemp:Display: Finished compile of shader map 0x00000245B4D1D280
+[2017.04.14-01.39.47:664][876]LogTemp:Display: Shader map WidgetMaterial_Y complete, GameThreadShaderMap 0x00000245B4D1D280, marking material WidgetMaterial_Y as finished
+[2017.04.14-01.39.47:664][876]LogTemp:Display: Marking material as finished 0x00000245B4D76800
+[2017.04.14-01.39.47:932][883]LogTemp:Display: Finished compile of shader map 0x00000245B4C33C80
+[2017.04.14-01.39.47:932][883]LogTemp:Display: Shader map WidgetMaterial_Z complete, GameThreadShaderMap 0x00000245B4C33C80, marking material WidgetMaterial_Z as finished
+[2017.04.14-01.39.47:932][883]LogTemp:Display: Marking material as finished 0x00000245B4D75000
+[2017.04.14-01.39.51:867][980]LogTemp:Display: Finished compile of shader map 0x00000245B4932400
+[2017.04.14-01.39.51:867][980]LogTemp:Display: Shader map WidgetVertexColorMaterial complete, GameThreadShaderMap 0x00000245B4932400, marking material WidgetVertexColorMaterial as finished
+[2017.04.14-01.39.51:867][980]LogTemp:Display: Marking material as finished 0x00000245B48FF880
+[2017.04.14-01.39.55:809][ 79]LogTemp:Display: Finished compile of shader map 0x00000245B9074100
+[2017.04.14-01.39.55:809][ 79]LogTemp:Display: Shader map BlinkingCaret complete, GameThreadShaderMap 0x00000245B9074100, marking material BlinkingCaret as finished
+[2017.04.14-01.39.55:809][ 79]LogTemp:Display: Marking material as finished 0x00000245B911FA00
+[2017.04.14-01.39.55:824][ 79]LogTemp:Display: Finished compile of shader map 0x00000245ACCC1280
+[2017.04.14-01.39.55:824][ 79]LogTemp:Display: Shader map LevelGridMaterial complete, GameThreadShaderMap 0x00000245ACCC1280, marking material LevelGridMaterial as finished
+[2017.04.14-01.39.55:824][ 79]LogTemp:Display: Marking material as finished 0x00000245B9142680
+[2017.04.14-01.39.58:613][159]LogTemp:Display: Finished compile of shader map 0x00000245B9CE2B00
+[2017.04.14-01.39.58:614][159]LogTemp:Display: Shader map M_StreamingPause complete, GameThreadShaderMap 0x00000245B9CE2B00, marking material M_StreamingPause as finished
+[2017.04.14-01.39.58:614][159]LogTemp:Display: Marking material as finished 0x00000245B48FDD80
+[2017.04.14-01.39.58:697][162]LogTemp:Display: Finished compile of shader map 0x00000245ACE4F200
+[2017.04.14-01.39.58:697][162]LogTemp:Display: Shader map LevelGridMaterial2 complete, GameThreadShaderMap 0x00000245ACE4F200, marking material LevelGridMaterial2 as finished
+[2017.04.14-01.39.58:697][162]LogTemp:Display: Marking material as finished 0x00000245ACE5A800
+[2017.04.14-01.44.32:790][874]Cmd: MAP LOAD FILE="../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.14-01.44.32:912][874]LogSlate: Took 0.015274 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.14-01.44.32:934][874]LightingResults: New page: Lighting Build
+[2017.04.14-01.44.32:937][874]LoadErrors: New page: Loading map: Iteration1.umap
+[2017.04.14-01.44.33:089][874]MapCheck: New page: Map Check
+[2017.04.14-01.44.33:089][874]LightingResults: New page: Lighting Build
+[2017.04.14-01.44.35:031][874]LogSlate: Took 0.011932 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.14-01.44.37:490][874]LogTexture:Display: Building textures: T_Worn_Key (AutoDXT, 1024X1024) - 77 MB total VRAM
+[2017.04.14-01.44.38:425][874]LogMaterial: Missing cached shader map for material Metal, compiling. 
+[2017.04.14-01.44.38:426][874]LogTemp:Display: Added material ShaderMap 0x00000245D75D6080 with Material 0x00000245A4497D00 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.38:437][874]LogTemp:Display: Kicking off shader compilation for Metal, GameThreadShaderMap 0x00000245D75D6080
+[2017.04.14-01.44.38:568][874]LogMaterial: Missing cached shader map for material BasicShapeMaterial, compiling. 
+[2017.04.14-01.44.38:569][874]LogTemp:Display: Added material ShaderMap 0x00000245C751B580 with Material 0x00000245D9089780 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.38:604][874]LogTemp:Display: Kicking off shader compilation for BasicShapeMaterial, GameThreadShaderMap 0x00000245C751B580
+[2017.04.14-01.44.40:175][874]LogMaterial: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2017.04.14-01.44.40:177][874]LogTemp:Display: Added material ShaderMap 0x00000245AFD9EB00 with Material 0x00000245B4990100 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.40:183][874]LogTemp:Display: Kicking off shader compilation for M_Sky_Panning_Clouds2, GameThreadShaderMap 0x00000245AFD9EB00
+[2017.04.14-01.44.40:250][874]LogStaticMesh: Building static mesh gun...
+[2017.04.14-01.44.40:521][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.42:653][874]LogStaticMesh: Built static mesh [2.44s] /Game/CustomContent/Meshes/gun.gun
+[2017.04.14-01.44.42:745][874]LogStaticMesh: Building static mesh HallCorner...
+[2017.04.14-01.44.42:746][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.42:782][874]LogStaticMesh: Built static mesh [0.04s] /Game/CustomContent/Meshes/HallCorner.HallCorner
+[2017.04.14-01.44.42:854][874]LogStaticMesh: Building static mesh HallSection...
+[2017.04.14-01.44.42:854][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.42:866][874]LogStaticMesh: Built static mesh [0.02s] /Game/CustomContent/Meshes/HallSection.HallSection
+[2017.04.14-01.44.42:911][874]LogStaticMesh: Building static mesh Key_Hex...
+[2017.04.14-01.44.42:912][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.43:061][874]LogStaticMesh: Built static mesh [0.15s] /Game/CustomContent/Meshes/Key_Hex.Key_Hex
+[2017.04.14-01.44.43:141][874]LogStaticMesh: Building static mesh Key_Regular...
+[2017.04.14-01.44.43:224][874]LogStaticMesh: Built static mesh [0.12s] /Game/CustomContent/Meshes/Key_Regular.Key_Regular
+[2017.04.14-01.44.43:330][874]LogStaticMesh: Building static mesh Key_Rectangle...
+[2017.04.14-01.44.43:330][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.43:395][874]LogStaticMesh: Built static mesh [0.07s] /Game/CustomContent/Meshes/Key_Rectangle.Key_Rectangle
+[2017.04.14-01.44.43:580][874]LogStaticMesh: Building static mesh Key_Star...
+[2017.04.14-01.44.44:482][874]LogStaticMesh: Built static mesh [0.93s] /Game/CustomContent/Meshes/Key_Star.Key_Star
+[2017.04.14-01.44.44:526][874]LogStaticMesh: Building static mesh Display_Star...
+[2017.04.14-01.44.44:527][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.44:549][874]LogStaticMesh: Built static mesh [0.03s] /Game/CustomContent/Meshes/Display_Star.Display_Star
+[2017.04.14-01.44.44:639][874]LogStaticMesh: Building static mesh KeyHead_Rect...
+[2017.04.14-01.44.44:640][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.44:669][874]LogStaticMesh: Built static mesh [0.06s] /Game/CustomContent/Meshes/KeyHead_Rect.KeyHead_Rect
+[2017.04.14-01.44.44:712][874]LogStaticMesh: Building static mesh Stanchion...
+[2017.04.14-01.44.44:713][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.44:769][874]LogStaticMesh: Built static mesh [0.06s] /Game/CustomContent/Meshes/Stanchion.Stanchion
+[2017.04.14-01.44.44:897][874]LogMaterial: Missing cached shader map for material M_smoke_subUV, compiling. 
+[2017.04.14-01.44.44:917][874]LogTemp:Display: Added material ShaderMap 0x00000245D2485D00 with Material 0x00000245A7E6E200 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.44:953][874]LogTemp:Display: Kicking off shader compilation for M_smoke_subUV, GameThreadShaderMap 0x00000245D2485D00
+[2017.04.14-01.44.45:013][874]LogMaterial: Missing cached shader map for material M_radial_ramp, compiling. 
+[2017.04.14-01.44.45:014][874]LogTemp:Display: Added material ShaderMap 0x00000245C715EE80 with Material 0x00000245A7E73700 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.45:031][874]LogTemp:Display: Kicking off shader compilation for M_radial_ramp, GameThreadShaderMap 0x00000245C715EE80
+[2017.04.14-01.44.45:140][874]LogTexture:Display: Building textures: Height (AutoDXT, 2048X2048) - 94 MB total VRAM
+[2017.04.14-01.44.46:444][874]LogTexture:Display: Building textures: Diffuse (AutoDXT, 2048X2048) - 94 MB total VRAM
+[2017.04.14-01.44.48:322][874]LogTexture:Display: Building textures: Metal (AutoDXT, 2048X2048) - 94 MB total VRAM
+[2017.04.14-01.44.49:939][874]LogTexture:Display: Building textures: Normal (BC5, 2048X2048) - 94 MB total VRAM
+[2017.04.14-01.44.51:158][874]LogTexture:Display: Building textures: Roughness (AutoDXT, 2048X2048) - 94 MB total VRAM
+[2017.04.14-01.44.53:261][874]LogMaterial: Missing cached shader map for material phong1, compiling. 
+[2017.04.14-01.44.53:263][874]LogTemp:Display: Added material ShaderMap 0x00000245D444E780 with Material 0x00000245B33E7280 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.53:317][874]LogTemp:Display: Kicking off shader compilation for phong1, GameThreadShaderMap 0x00000245D444E780
+[2017.04.14-01.44.53:449][874]LogMaterial: Missing cached shader map for material m_flare_01, compiling. 
+[2017.04.14-01.44.53:450][874]LogTemp:Display: Added material ShaderMap 0x00000245BF3E0B80 with Material 0x00000245A7E72980 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.53:475][874]LogTemp:Display: Kicking off shader compilation for m_flare_01, GameThreadShaderMap 0x00000245BF3E0B80
+[2017.04.14-01.44.53:564][874]LogMaterial: Missing cached shader map for material M_explosion_subUV, compiling. 
+[2017.04.14-01.44.53:566][874]LogTemp:Display: Added material ShaderMap 0x00000245C80B0F00 with Material 0x00000245B33F3D00 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.53:596][874]LogTemp:Display: Kicking off shader compilation for M_explosion_subUV, GameThreadShaderMap 0x00000245C80B0F00
+[2017.04.14-01.44.53:653][874]LogMaterial: Missing cached shader map for material M_Burst, compiling. 
+[2017.04.14-01.44.53:654][874]LogTemp:Display: Added material ShaderMap 0x00000245BEC80800 with Material 0x00000245B33EA680 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.53:695][874]LogTemp:Display: Kicking off shader compilation for M_Burst, GameThreadShaderMap 0x00000245BEC80800
+[2017.04.14-01.44.53:795][874]LogMaterial: Missing cached shader map for material White_Translucent, compiling. 
+[2017.04.14-01.44.53:797][874]LogTemp:Display: Added material ShaderMap 0x00000245C25D0B80 with Material 0x00000245AE4FA200 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.53:832][874]LogTemp:Display: Kicking off shader compilation for White_Translucent, GameThreadShaderMap 0x00000245C25D0B80
+[2017.04.14-01.44.53:852][874]LogMaterial: Missing cached shader map for material M_Metal_Copper, compiling. 
+[2017.04.14-01.44.53:854][874]LogTemp:Display: Added material ShaderMap 0x00000245D1DA4100 with Material 0x00000245DD9BD000 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.53:894][874]LogTemp:Display: Kicking off shader compilation for M_Metal_Copper, GameThreadShaderMap 0x00000245D1DA4100
+[2017.04.14-01.44.54:084][874]LogMaterial: Missing cached shader map for material Red_translucent_mat, compiling. 
+[2017.04.14-01.44.54:085][874]LogTemp:Display: Added material ShaderMap 0x00000245D94EBC80 with Material 0x00000245D850A380 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.54:112][874]LogTemp:Display: Kicking off shader compilation for Red_translucent_mat, GameThreadShaderMap 0x00000245D94EBC80
+[2017.04.14-01.44.54:121][874]LogMaterial: Missing cached shader map for material Green_Mat, compiling. 
+[2017.04.14-01.44.54:122][874]LogTemp:Display: Added material ShaderMap 0x00000245C8516E80 with Material 0x00000245D9088280 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.54:147][874]LogTemp:Display: Kicking off shader compilation for Green_Mat, GameThreadShaderMap 0x00000245C8516E80
+[2017.04.14-01.44.54:162][874]LogMaterial: Missing cached shader map for material Black_Mat, compiling. 
+[2017.04.14-01.44.54:164][874]LogTemp:Display: Added material ShaderMap 0x00000245D0C35600 with Material 0x00000245D8514E80 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.54:195][874]LogTemp:Display: Kicking off shader compilation for Black_Mat, GameThreadShaderMap 0x00000245D0C35600
+[2017.04.14-01.44.54:241][874]LogStaticMesh: Building static mesh DM_Box...
+[2017.04.14-01.44.54:241][874]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.14-01.44.54:244][874]LogStaticMesh: Built static mesh [0.05s] /Game/CustomContent/DM_Box.DM_Box
+[2017.04.14-01.44.54:345][874]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024) - 97 MB total VRAM
+[2017.04.14-01.44.54:636][874]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 512X512) - 97 MB total VRAM
+[2017.04.14-01.44.54:678][874]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 64X64) - 97 MB total VRAM
+[2017.04.14-01.44.54:701][874]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024) - 97 MB total VRAM
+[2017.04.14-01.44.54:807][874]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1, 512X512) - 97 MB total VRAM
+[2017.04.14-01.44.54:827][874]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1, 64X64) - 97 MB total VRAM
+[2017.04.14-01.44.54:842][874]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (BGRA8, 1024X512) - 97 MB total VRAM
+[2017.04.14-01.44.54:884][874]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (BGRA8, 256X128) - 97 MB total VRAM
+[2017.04.14-01.44.54:886][874]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (BGRA8, 32X32) - 97 MB total VRAM
+[2017.04.14-01.44.56:031][874]LogMaterial: Missing cached shader map for material M_Wood_Walnut, compiling. 
+[2017.04.14-01.44.56:033][874]LogTemp:Display: Added material ShaderMap 0x00000245D6C2B900 with Material 0x00000245DA1BD900 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.56:072][874]LogTemp:Display: Kicking off shader compilation for M_Wood_Walnut, GameThreadShaderMap 0x00000245D6C2B900
+[2017.04.14-01.44.56:102][874]LogMaterial: Missing cached shader map for material M_Wood_Floor_Walnut_Worn, compiling. 
+[2017.04.14-01.44.56:103][874]LogTemp:Display: Added material ShaderMap 0x00000245D4CF9280 with Material 0x00000245D9FE9180 to ShaderMapsBeingCompiled
+[2017.04.14-01.44.56:133][874]LogTemp:Display: Kicking off shader compilation for M_Wood_Floor_Walnut_Worn, GameThreadShaderMap 0x00000245D4CF9280
+[2017.04.14-01.44.56:224][874]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-01.44.56:252][874]LogTemp:Display: Finished compile of shader map 0x00000245C751B580
+[2017.04.14-01.44.56:252][874]LogTemp:Display: Shader map BasicShapeMaterial complete, GameThreadShaderMap 0x00000245C751B580, marking material BasicShapeMaterial as finished
+[2017.04.14-01.44.56:252][874]LogTemp:Display: Marking material as finished 0x00000245D9089780
+[2017.04.14-01.44.56:262][874]LogTemp:Display: Finished compile of shader map 0x00000245AFD9EB00
+[2017.04.14-01.44.56:262][874]LogTemp:Display: Shader map M_Sky_Panning_Clouds2 complete, GameThreadShaderMap 0x00000245AFD9EB00, marking material M_Sky_Panning_Clouds2 as finished
+[2017.04.14-01.44.56:262][874]LogTemp:Display: Marking material as finished 0x00000245B4990100
+[2017.04.14-01.44.56:272][874]LogTemp:Display: Finished compile of shader map 0x00000245D75D6080
+[2017.04.14-01.44.56:272][874]LogTemp:Display: Shader map Metal complete, GameThreadShaderMap 0x00000245D75D6080, marking material Metal as finished
+[2017.04.14-01.44.56:272][874]LogTemp:Display: Marking material as finished 0x00000245A4497D00
+[2017.04.14-01.44.56:962][874]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.14-01.44.57:027][874]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.14-01.44.57:151][874]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 123.314ms to complete.
+[2017.04.14-01.44.57:151][874]LogFileHelpers: Loading map 'Iteration1' took 24.414
+[2017.04.14-01.44.57:347][874]LogTemp:Display: Finished compile of shader map 0x00000245D2485D00
+[2017.04.14-01.44.57:347][874]LogTemp:Display: Shader map M_smoke_subUV complete, GameThreadShaderMap 0x00000245D2485D00, marking material M_smoke_subUV as finished
+[2017.04.14-01.44.57:347][874]LogTemp:Display: Marking material as finished 0x00000245A7E6E200
+[2017.04.14-01.45.03:463][913]LogTemp:Display: Finished compile of shader map 0x00000245C715EE80
+[2017.04.14-01.45.03:463][913]LogTemp:Display: Shader map M_radial_ramp complete, GameThreadShaderMap 0x00000245C715EE80, marking material M_radial_ramp as finished
+[2017.04.14-01.45.03:463][913]LogTemp:Display: Marking material as finished 0x00000245A7E73700
+[2017.04.14-01.45.07:782][  5]LogTemp:Display: Finished compile of shader map 0x00000245D444E780
+[2017.04.14-01.45.07:782][  5]LogTemp:Display: Shader map phong1 complete, GameThreadShaderMap 0x00000245D444E780, marking material phong1 as finished
+[2017.04.14-01.45.07:782][  5]LogTemp:Display: Marking material as finished 0x00000245B33E7280
+[2017.04.14-01.45.18:028][226]LogTemp:Display: Finished compile of shader map 0x00000245BF3E0B80
+[2017.04.14-01.45.18:028][226]LogTemp:Display: Shader map m_flare_01 complete, GameThreadShaderMap 0x00000245BF3E0B80, marking material m_flare_01 as finished
+[2017.04.14-01.45.18:028][226]LogTemp:Display: Marking material as finished 0x00000245A7E72980
+[2017.04.14-01.45.19:249][252]LogTemp:Display: Finished compile of shader map 0x00000245C80B0F00
+[2017.04.14-01.45.19:249][252]LogTemp:Display: Shader map M_explosion_subUV complete, GameThreadShaderMap 0x00000245C80B0F00, marking material M_explosion_subUV as finished
+[2017.04.14-01.45.19:249][252]LogTemp:Display: Marking material as finished 0x00000245B33F3D00
+[2017.04.14-01.45.26:954][422]LogTemp:Display: Finished compile of shader map 0x00000245BEC80800
+[2017.04.14-01.45.26:954][422]LogTemp:Display: Shader map M_Burst complete, GameThreadShaderMap 0x00000245BEC80800, marking material M_Burst as finished
+[2017.04.14-01.45.26:954][422]LogTemp:Display: Marking material as finished 0x00000245B33EA680
+[2017.04.14-01.45.40:193][710]LogTemp:Display: Finished compile of shader map 0x00000245D1DA4100
+[2017.04.14-01.45.40:193][710]LogTemp:Display: Shader map M_Metal_Copper complete, GameThreadShaderMap 0x00000245D1DA4100, marking material M_Metal_Copper as finished
+[2017.04.14-01.45.40:193][710]LogTemp:Display: Marking material as finished 0x00000245DD9BD000
+[2017.04.14-01.45.42:184][754]LogTemp:Display: Finished compile of shader map 0x00000245C25D0B80
+[2017.04.14-01.45.42:184][754]LogTemp:Display: Shader map White_Translucent complete, GameThreadShaderMap 0x00000245C25D0B80, marking material White_Translucent as finished
+[2017.04.14-01.45.42:184][754]LogTemp:Display: Marking material as finished 0x00000245AE4FA200
+[2017.04.14-01.45.50:934][946]LogTemp:Display: Finished compile of shader map 0x00000245C8516E80
+[2017.04.14-01.45.50:934][946]LogTemp:Display: Shader map Green_Mat complete, GameThreadShaderMap 0x00000245C8516E80, marking material Green_Mat as finished
+[2017.04.14-01.45.50:934][946]LogTemp:Display: Marking material as finished 0x00000245D9088280
+[2017.04.14-01.45.55:422][ 43]LogTemp:Display: Finished compile of shader map 0x00000245D0C35600
+[2017.04.14-01.45.55:423][ 43]LogTemp:Display: Shader map Black_Mat complete, GameThreadShaderMap 0x00000245D0C35600, marking material Black_Mat as finished
+[2017.04.14-01.45.55:423][ 43]LogTemp:Display: Marking material as finished 0x00000245D8514E80
+[2017.04.14-01.45.58:925][118]LogTemp:Display: Finished compile of shader map 0x00000245D94EBC80
+[2017.04.14-01.45.58:925][118]LogTemp:Display: Shader map Red_translucent_mat complete, GameThreadShaderMap 0x00000245D94EBC80, marking material Red_translucent_mat as finished
+[2017.04.14-01.45.58:925][118]LogTemp:Display: Marking material as finished 0x00000245D850A380
+[2017.04.14-01.46.04:451][241]LogTemp:Display: Finished compile of shader map 0x00000245D6C2B900
+[2017.04.14-01.46.04:451][241]LogTemp:Display: Shader map M_Wood_Walnut complete, GameThreadShaderMap 0x00000245D6C2B900, marking material M_Wood_Walnut as finished
+[2017.04.14-01.46.04:451][241]LogTemp:Display: Marking material as finished 0x00000245DA1BD900
+[2017.04.14-01.46.08:751][340]LogTemp:Display: Finished compile of shader map 0x00000245D4CF9280
+[2017.04.14-01.46.08:751][340]LogTemp:Display: Shader map M_Wood_Floor_Walnut_Worn complete, GameThreadShaderMap 0x00000245D4CF9280, marking material M_Wood_Floor_Walnut_Worn as finished
+[2017.04.14-01.46.08:751][340]LogTemp:Display: Marking material as finished 0x00000245D9FE9180
+[2017.04.14-02.10.00:473][ 63]LogEditorViewport: Clicking on Actor (LMB): MotionControllerPawn_C (MotionControllerPawn)
+[2017.04.14-02.11.17:362][443]LogEditorViewport: Clicking on Actor (context menu): Elevator_C (Elevator)
+[2017.04.14-02.11.24:881][596]LogEditorViewport: Clicking on Actor (LMB): MotionControllerPawn_C (MotionControllerPawn)
+[2017.04.14-02.15.15:951][  4]Cmd: TRANSACTION UNDO
+[2017.04.14-02.15.15:951][  4]LogEditorTransaction: Undo Move Actors
+[2017.04.14-02.15.16:516][ 24]Cmd: TRANSACTION UNDO
+[2017.04.14-02.15.16:517][ 24]LogEditorTransaction: Undo Move Actors
+[2017.04.14-02.15.17:060][ 51]Cmd: TRANSACTION UNDO
+[2017.04.14-02.15.17:060][ 51]LogEditorTransaction: Undo Rotate Actors
+[2017.04.14-02.15.18:246][ 74]Cmd: TRANSACTION UNDO
+[2017.04.14-02.15.18:246][ 74]LogEditorTransaction: Undo Move Actors
+[2017.04.14-02.15.19:001][ 88]Cmd: TRANSACTION UNDO
+[2017.04.14-02.15.19:002][ 88]LogEditorTransaction: Undo Move Actors
+[2017.04.14-02.15.19:910][106]Cmd: TRANSACTION UNDO
+[2017.04.14-02.15.19:910][106]LogEditorTransaction: Undo Move Actors
+[2017.04.14-02.15.24:117][107]Cmd: TRANSACTION UNDO
+[2017.04.14-02.15.24:117][107]LogEditorTransaction: Undo Clicking on Actors
+[2017.04.14-02.15.31:457][246]LogEditorViewport: Clicking on Actor (LMB): MotionControllerPawn_C (MotionControllerPawn)
+[2017.04.14-02.15.57:934][747]LogEditorViewport: Clicking on Actor (LMB): Elevator_C (Elevator)
+[2017.04.14-02.16.02:540][950]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2017.04.14-02.16.02:540][950]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2017.04.14-02.16.20:110][ 16]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0018 seconds. Added 112 classes and 0 folders.
+[2017.04.14-02.16.22:765][ 16]LogSlate: Took 0.059227 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.14-02.16.23:133][ 17]LogSlate: Took 0.032752 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.14-02.18.06:783][582]BlueprintLog: New page: Compile Iteration1
+[2017.04.14-02.18.14:769][915]LogSavePackage: Save=551.41ms
+[2017.04.14-02.18.14:769][915]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Iteration12A1D5E9F46581171720806A1AE65C31A.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1.umap'
+[2017.04.14-02.18.14:826][915]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1.umap
+[2017.04.14-02.18.14:910][915]LogFileHelpers: Saving map 'Iteration1' took 1.042
+[2017.04.14-02.18.19:323][ 42]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.18.19:423][ 42]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.18.20:355][ 42]PIE: New page: SIE session: Iteration1 (Apr 13, 2017, 6:18:20 PM)
+[2017.04.14-02.18.20:452][ 42]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.18.20:803][ 42]LogPlayLevel: PIE: StaticDuplicateObject took: (0.350478s)
+[2017.04.14-02.18.20:804][ 42]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.18.20:804][ 42]LogPlayLevel: PIE: World Init took: (0.001200s)
+[2017.04.14-02.18.20:818][ 42]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.387234s)
+[2017.04.14-02.18.20:962][ 42]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.18.20:971][ 42]LogInit: FAudioDevice initialized.
+[2017.04.14-02.18.21:290][ 42]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.18.21:290][ 42]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.18.21:836][ 42]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.18.21
+[2017.04.14-02.18.22:000][ 42]LogWorld: Bringing up level for play took: 0.543823
+[2017.04.14-02.18.22:318][ 42]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0014 seconds. Added 11 classes and 0 folders.
+[2017.04.14-02.18.22:560][ 42]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 4.179
+[2017.04.14-02.18.22:665][ 42]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.18.40:149][343]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.18.40:317][343]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.18.44:378][543]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.18.44:378][543]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.18.44:378][543]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:18:44 PM)
+[2017.04.14-02.18.44:378][543]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.18.44:421][543]LogPlayLevel: PIE: StaticDuplicateObject took: (0.042195s)
+[2017.04.14-02.18.44:421][543]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.18.44:421][543]LogPlayLevel: PIE: World Init took: (0.000709s)
+[2017.04.14-02.18.44:422][543]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.043240s)
+[2017.04.14-02.18.44:445][543]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.18.44:451][543]LogInit: FAudioDevice initialized.
+[2017.04.14-02.18.44:478][543]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.18.44:478][543]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.18.44:484][543]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.18.44
+[2017.04.14-02.18.44:485][543]LogWorld: Bringing up level for play took: 0.005095
+[2017.04.14-02.18.44:500][543]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 0.12
+[2017.04.14-02.18.44:501][543]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.18.48:542][672]LogScript:Warning: Accessed None trying to read property PlayerPawn
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:00FD
+[2017.04.14-02.18.48:568][672]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property PlayerPawn from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None trying to read property PlayerPawn
+[2017.04.14-02.18.48:568][672]LogScript:Warning: Accessed None
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:0112
+[2017.04.14-02.18.48:568][672]PIE:Error: Error Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None
+[2017.04.14-02.18.48:606][672]LogScript:Warning: Accessed None trying to read property PlayerPawn
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:0199
+[2017.04.14-02.18.48:606][672]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property PlayerPawn from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None trying to read property PlayerPawn
+[2017.04.14-02.18.48:606][672]LogScript:Warning: Accessed None
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:01AE
+[2017.04.14-02.18.48:606][672]PIE:Error: Error Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None
+[2017.04.14-02.18.49:582][709]LogScript:Warning: Accessed None trying to read property PlayerPawn
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:00FD
+[2017.04.14-02.18.49:583][709]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property PlayerPawn from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None trying to read property PlayerPawn
+[2017.04.14-02.18.49:583][709]LogScript:Warning: Accessed None
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:0112
+[2017.04.14-02.18.49:583][709]PIE:Error: Error Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None
+[2017.04.14-02.18.49:583][709]LogScript:Warning: Accessed None trying to read property PlayerPawn
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:0199
+[2017.04.14-02.18.49:584][709]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property PlayerPawn from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None trying to read property PlayerPawn
+[2017.04.14-02.18.49:584][709]LogScript:Warning: Accessed None
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:01AE
+[2017.04.14-02.18.49:584][709]PIE:Error: Error Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None
+[2017.04.14-02.18.50:268][735]LogScript:Warning: Accessed None trying to read property PlayerPawn
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:00FD
+[2017.04.14-02.18.50:269][735]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property PlayerPawn from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None trying to read property PlayerPawn
+[2017.04.14-02.18.50:269][735]LogScript:Warning: Accessed None
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:0112
+[2017.04.14-02.18.50:270][735]PIE:Error: Error Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None
+[2017.04.14-02.18.50:270][735]LogScript:Warning: Accessed None trying to read property PlayerPawn
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:0199
+[2017.04.14-02.18.50:270][735]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property PlayerPawn from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None trying to read property PlayerPawn
+[2017.04.14-02.18.50:271][735]LogScript:Warning: Accessed None
+	Elevator_C /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1:PersistentLevel.Elevator_98
+	Function /Game/CustomContent/Elevator.Elevator_C:ExecuteUbergraph_Elevator:01AE
+[2017.04.14-02.18.50:271][735]PIE:Error: Error Blueprint Runtime Error: Accessed None from function: 'ExecuteUbergraph_Elevator' from node: SetWorldLocation in graph: EventGraph in object: Elevator with description: Accessed None
+[2017.04.14-02.18.51:545][782]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.18.51:638][782]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.19.53:095][371]LogMaterial: Missing cached shader map for material GridMaterial, compiling. 
+[2017.04.14-02.19.53:096][371]LogTemp:Display: Added material ShaderMap 0x00000245C7D0F200 with Material 0x00000245C7D11A80 to ShaderMapsBeingCompiled
+[2017.04.14-02.19.53:110][371]LogTemp:Display: Kicking off shader compilation for GridMaterial, GameThreadShaderMap 0x00000245C7D0F200
+[2017.04.14-02.19.53:633][371]LogMaterial: Missing cached shader map for material PersonaFloorMat, compiling. 
+[2017.04.14-02.19.53:634][371]LogTemp:Display: Added material ShaderMap 0x00000245C7BAEE80 with Material 0x00000245C7BC2980 to ShaderMapsBeingCompiled
+[2017.04.14-02.19.53:656][371]LogTemp:Display: Kicking off shader compilation for PersonaFloorMat, GameThreadShaderMap 0x00000245C7BAEE80
+[2017.04.14-02.19.59:486][518]LogRenderer: Reallocating scene render targets to support 924x724 NumSamples 1 (Frame:65597).
+[2017.04.14-02.20.04:045][670]LogTemp:Display: Finished compile of shader map 0x00000245C7D0F200
+[2017.04.14-02.20.04:045][670]LogTemp:Display: Shader map GridMaterial complete, GameThreadShaderMap 0x00000245C7D0F200, marking material GridMaterial as finished
+[2017.04.14-02.20.04:046][670]LogTemp:Display: Marking material as finished 0x00000245C7D11A80
+[2017.04.14-02.20.06:638][818]LogTemp:Display: Finished compile of shader map 0x00000245C7BAEE80
+[2017.04.14-02.20.06:638][818]LogTemp:Display: Shader map PersonaFloorMat complete, GameThreadShaderMap 0x00000245C7BAEE80, marking material PersonaFloorMat as finished
+[2017.04.14-02.20.06:638][818]LogTemp:Display: Marking material as finished 0x00000245C7BC2980
+[2017.04.14-02.20.27:802][ 43]BlueprintLog: New page: Compile Elevator
+[2017.04.14-02.20.28:560][ 68]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CustomContent/Elevator" FILE="../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset" SILENT=true
+[2017.04.14-02.20.28:642][ 68]LogSavePackage: Save=62.72ms
+[2017.04.14-02.20.28:642][ 68]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Elevator1B497174493C07B0EBBB8793982D1525.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset'
+[2017.04.14-02.20.28:659][ 68]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset
+[2017.04.14-02.20.32:916][320]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CustomContent/Elevator" FILE="../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset" SILENT=true
+[2017.04.14-02.20.32:963][320]LogSavePackage: Save=30.96ms
+[2017.04.14-02.20.32:963][320]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/ElevatorFCE6DC71437FE8D8ACED13AA9EB617B8.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset'
+[2017.04.14-02.20.32:965][320]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset
+[2017.04.14-02.20.35:458][389]LogSavePackage: Save=473.40ms
+[2017.04.14-02.20.35:458][389]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Iteration183B92FA240C3A19F720ECCA22022F287.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1.umap'
+[2017.04.14-02.20.35:462][389]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1.umap
+[2017.04.14-02.20.35:709][389]LogSavePackage: Save=127.85ms
+[2017.04.14-02.20.35:709][389]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Iteration1_BuiltDataE44934044A8040BD8E9276A75499905E.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1_BuiltData.uasset'
+[2017.04.14-02.20.35:710][389]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1_BuiltData.uasset
+[2017.04.14-02.20.36:855][417]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.20.36:885][417]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.20.36:885][417]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.20.36:885][417]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:20:36 PM)
+[2017.04.14-02.20.36:886][417]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.20.36:947][417]LogPlayLevel: PIE: StaticDuplicateObject took: (0.061224s)
+[2017.04.14-02.20.36:947][417]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.20.36:948][417]LogPlayLevel: PIE: World Init took: (0.000717s)
+[2017.04.14-02.20.36:948][417]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.062215s)
+[2017.04.14-02.20.36:972][417]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.20.36:978][417]LogInit: FAudioDevice initialized.
+[2017.04.14-02.20.37:022][417]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.20.37:022][417]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.20.37:027][417]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.20.37
+[2017.04.14-02.20.37:028][417]LogWorld: Bringing up level for play took: 0.004988
+[2017.04.14-02.20.37:031][417]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 0.65
+[2017.04.14-02.20.37:031][417]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.20.42:090][571]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.20.42:157][571]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.20.47:905][786]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.20.47:926][786]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.20.47:926][786]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.20.47:926][786]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:20:47 PM)
+[2017.04.14-02.20.47:926][786]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.20.47:961][786]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034688s)
+[2017.04.14-02.20.47:961][786]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.20.47:961][786]LogPlayLevel: PIE: World Init took: (0.000680s)
+[2017.04.14-02.20.47:962][786]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.035631s)
+[2017.04.14-02.20.47:987][786]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.20.47:993][786]LogInit: FAudioDevice initialized.
+[2017.04.14-02.20.48:027][786]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.20.48:027][786]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.20.48:032][786]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.20.48
+[2017.04.14-02.20.48:033][786]LogWorld: Bringing up level for play took: 0.004847
+[2017.04.14-02.20.48:036][786]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 -0.345
+[2017.04.14-02.20.48:036][786]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.20.57:456][106]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.20.57:552][106]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.21.18:881][254]BlueprintLog: New page: Compile Iteration1
+[2017.04.14-02.21.20:839][365]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.21.20:853][365]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.21.20:854][365]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.21.20:854][365]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:21:20 PM)
+[2017.04.14-02.21.20:854][365]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.21.20:888][365]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034491s)
+[2017.04.14-02.21.20:889][365]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.21.20:889][365]LogPlayLevel: PIE: World Init took: (0.000685s)
+[2017.04.14-02.21.20:889][365]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.035416s)
+[2017.04.14-02.21.20:911][365]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.21.20:918][365]LogInit: FAudioDevice initialized.
+[2017.04.14-02.21.21:050][365]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.21.21:050][365]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.21.21:058][365]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.21.21
+[2017.04.14-02.21.21:059][365]LogWorld: Bringing up level for play took: 0.007386
+[2017.04.14-02.21.21:063][365]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 0.682
+[2017.04.14-02.21.21:063][365]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.21.21:076][365]LogRenderer: Reallocating scene render targets to support 1292x756 NumSamples 1 (Frame:66354).
+[2017.04.14-02.21.53:688][123]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.21.53:839][123]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.21.57:528][236]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.21.57:575][236]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.21.57:575][236]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.21.57:575][236]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:21:57 PM)
+[2017.04.14-02.21.57:575][236]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.21.57:616][236]LogPlayLevel: PIE: StaticDuplicateObject took: (0.040907s)
+[2017.04.14-02.21.57:617][236]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.21.57:617][236]LogPlayLevel: PIE: World Init took: (0.000764s)
+[2017.04.14-02.21.57:618][236]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.042142s)
+[2017.04.14-02.21.57:646][236]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.21.57:652][236]LogInit: FAudioDevice initialized.
+[2017.04.14-02.21.57:683][236]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.21.57:683][236]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.21.57:689][236]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.21.57
+[2017.04.14-02.21.57:690][236]LogWorld: Bringing up level for play took: 0.005580
+[2017.04.14-02.21.57:693][236]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 -0.687
+[2017.04.14-02.21.57:693][236]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.22.16:200][632]LogEditorViewport: Clicking on Actor (LMB): Elevator_C (Elevator)
+[2017.04.14-02.22.21:290][741]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.22.21:377][741]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.23.18:815][726]LogEditorViewport: Clicking on Actor (LMB): MotionControllerPawn_C (MotionControllerPawn)
+[2017.04.14-02.23.26:093][ 51]BlueprintLog: New page: Compile Iteration1
+[2017.04.14-02.23.27:103][106]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.23.27:117][106]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.23.27:117][106]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.23.27:117][106]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:23:27 PM)
+[2017.04.14-02.23.27:117][106]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.23.27:150][106]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033059s)
+[2017.04.14-02.23.27:151][106]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.23.27:151][106]LogPlayLevel: PIE: World Init took: (0.000742s)
+[2017.04.14-02.23.27:151][106]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.034161s)
+[2017.04.14-02.23.27:200][106]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.23.27:206][106]LogInit: FAudioDevice initialized.
+[2017.04.14-02.23.27:242][106]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.23.27:242][106]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.23.27:248][106]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.23.27
+[2017.04.14-02.23.27:249][106]LogWorld: Bringing up level for play took: 0.005293
+[2017.04.14-02.23.27:252][106]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 0.872
+[2017.04.14-02.23.27:253][106]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.23.39:927][401]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.23.40:064][401]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.24.43:963][146]BlueprintLog: New page: Compile Elevator
+[2017.04.14-02.24.44:705][178]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CustomContent/Elevator" FILE="../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset" SILENT=true
+[2017.04.14-02.24.44:767][178]LogSavePackage: Save=45.03ms
+[2017.04.14-02.24.44:767][178]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Elevator6E24D04E43288A617771ABAF475A46B8.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset'
+[2017.04.14-02.24.44:770][178]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset
+[2017.04.14-02.24.45:866][243]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.24.45:881][243]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.24.45:881][243]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.24.45:881][243]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:24:45 PM)
+[2017.04.14-02.24.45:881][243]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.24.45:912][243]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031517s)
+[2017.04.14-02.24.45:913][243]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.24.45:913][243]LogPlayLevel: PIE: World Init took: (0.000721s)
+[2017.04.14-02.24.45:913][243]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.032511s)
+[2017.04.14-02.24.45:965][243]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.24.45:971][243]LogInit: FAudioDevice initialized.
+[2017.04.14-02.24.46:008][243]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.24.46:008][243]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.24.46:016][243]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.24.46
+[2017.04.14-02.24.46:017][243]LogWorld: Bringing up level for play took: 0.008093
+[2017.04.14-02.24.46:023][243]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 -0.358
+[2017.04.14-02.24.46:023][243]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.12:278][867]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.12:416][867]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.29:086][860]BlueprintLog: New page: Compile Elevator
+[2017.04.14-02.25.30:172][916]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.25.30:188][916]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.30:188][916]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.25.30:188][916]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:25:30 PM)
+[2017.04.14-02.25.30:188][916]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.25.30:219][916]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031365s)
+[2017.04.14-02.25.30:220][916]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.25.30:220][916]LogPlayLevel: PIE: World Init took: (0.000786s)
+[2017.04.14-02.25.30:220][916]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.032394s)
+[2017.04.14-02.25.30:265][916]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.25.30:272][916]LogInit: FAudioDevice initialized.
+[2017.04.14-02.25.30:308][916]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.25.30:308][916]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.25.30:314][916]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.25.30
+[2017.04.14-02.25.30:314][916]LogWorld: Bringing up level for play took: 0.005146
+[2017.04.14-02.25.30:320][916]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 -0.061
+[2017.04.14-02.25.30:320][916]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.49:470][368]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.49:604][368]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.51:745][433]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.25.51:771][433]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.25.51:771][433]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.25.51:772][433]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:25:51 PM)
+[2017.04.14-02.25.51:772][433]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.25.51:817][433]LogPlayLevel: PIE: StaticDuplicateObject took: (0.045597s)
+[2017.04.14-02.25.51:818][433]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.25.51:818][433]LogPlayLevel: PIE: World Init took: (0.000990s)
+[2017.04.14-02.25.51:819][433]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.047637s)
+[2017.04.14-02.25.51:880][433]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.25.51:888][433]LogInit: FAudioDevice initialized.
+[2017.04.14-02.25.51:919][433]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.25.51:919][433]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.25.51:926][433]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.25.51
+[2017.04.14-02.25.51:927][433]LogWorld: Bringing up level for play took: 0.007552
+[2017.04.14-02.25.51:933][433]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 -0.448
+[2017.04.14-02.25.51:934][433]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.26.19:906][ 81]LogEditorViewport: Clicking on Actor (LMB): BP_MotionController_C (BP_MotionController)
+[2017.04.14-02.26.51:304][736]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.26.51:392][736]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.27.38:680][704]BlueprintLog: New page: Compile Elevator
+[2017.04.14-02.27.39:393][732]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CustomContent/Elevator" FILE="../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset" SILENT=true
+[2017.04.14-02.27.39:482][732]LogSavePackage: Save=66.79ms
+[2017.04.14-02.27.39:482][732]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/ElevatorD461C2534814EE994171A296BA1D58B0.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset'
+[2017.04.14-02.27.39:485][732]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset
+[2017.04.14-02.27.45:236][ 67]BlueprintLog: New page: Compile Elevator
+[2017.04.14-02.27.45:827][ 90]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CustomContent/Elevator" FILE="../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset" SILENT=true
+[2017.04.14-02.27.45:882][ 90]LogSavePackage: Save=39.90ms
+[2017.04.14-02.27.45:882][ 90]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Elevator1EA214874624BACE76159E9352A78DB6.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset'
+[2017.04.14-02.27.45:885][ 90]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Elevator.uasset
+[2017.04.14-02.27.46:859][148]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.27.46:875][148]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.27.46:875][148]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.27.46:875][148]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:27:46 PM)
+[2017.04.14-02.27.46:875][148]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.27.46:908][148]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032629s)
+[2017.04.14-02.27.46:908][148]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.27.46:908][148]LogPlayLevel: PIE: World Init took: (0.000729s)
+[2017.04.14-02.27.46:909][148]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.033632s)
+[2017.04.14-02.27.46:930][148]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.27.46:937][148]LogInit: FAudioDevice initialized.
+[2017.04.14-02.27.46:972][148]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.27.46:972][148]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.27.46:978][148]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.27.46
+[2017.04.14-02.27.46:978][148]LogWorld: Bringing up level for play took: 0.005099
+[2017.04.14-02.27.46:986][148]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 0.605
+[2017.04.14-02.27.46:988][148]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.28.08:541][673]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.28.08:662][673]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.28.10:551][732]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.28.10:570][732]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.28.10:570][732]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.28.10:571][732]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:28:10 PM)
+[2017.04.14-02.28.10:571][732]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.28.10:604][732]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033125s)
+[2017.04.14-02.28.10:604][732]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.28.10:605][732]LogPlayLevel: PIE: World Init took: (0.000890s)
+[2017.04.14-02.28.10:605][732]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.034503s)
+[2017.04.14-02.28.10:629][732]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.28.10:635][732]LogInit: FAudioDevice initialized.
+[2017.04.14-02.28.10:668][732]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.28.10:668][732]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.28.10:674][732]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.28.10
+[2017.04.14-02.28.10:674][732]LogWorld: Bringing up level for play took: 0.005060
+[2017.04.14-02.28.10:677][732]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 0.297
+[2017.04.14-02.28.10:678][732]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.28.32:206][354]LogEditorViewport: Clicking on Actor (LMB): BP_MotionController_C (BP_MotionController1)
+[2017.04.14-02.28.40:739][512]LogEditorViewport: Clicking on Actor (LMB): Elevator_C (Elevator)
+[2017.04.14-02.29.11:317][962]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.29.11:519][962]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.30.59:448][ 33]BlueprintLog: New page: Compile Iteration1
+[2017.04.14-02.31.05:197][372]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.14-02.31.05:212][372]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.31.05:212][372]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.14-02.31.05:212][372]PIE: New page: PIE session: Iteration1 (Apr 13, 2017, 6:31:05 PM)
+[2017.04.14-02.31.05:213][372]LogPlayLevel: Creating play world package: /Game/CustomContent/Maps/UEDPIE_0_Iteration1
+[2017.04.14-02.31.05:245][372]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032767s)
+[2017.04.14-02.31.05:246][372]LogAIModule: Creating AISystem for world Iteration1
+[2017.04.14-02.31.05:246][372]LogPlayLevel: PIE: World Init took: (0.000774s)
+[2017.04.14-02.31.05:246][372]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/Maps/Iteration1.Iteration1 to /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 (0.033826s)
+[2017.04.14-02.31.05:293][372]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.14-02.31.05:299][372]LogInit: FAudioDevice initialized.
+[2017.04.14-02.31.05:334][372]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.14-02.31.05:334][372]LogLoad: Game class is 'GameModeBase'
+[2017.04.14-02.31.05:341][372]LogWorld: Bringing World /Game/CustomContent/Maps/UEDPIE_0_Iteration1.Iteration1 up for play (max tick rate 60) at 2017.04.13-22.31.05
+[2017.04.14-02.31.05:341][372]LogWorld: Bringing up level for play took: 0.006127
+[2017.04.14-02.31.05:370][372]PIE: Info Play in editor start time for /Game/CustomContent/Maps/UEDPIE_0_Iteration1 0.989
+[2017.04.14-02.31.05:372][372]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.33.27:920][440]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.33.28:076][440]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1' with GeneratedClass '/Game/CustomContent/Maps/Iteration1.Iteration1_C' with ClassGeneratedBy '/Game/CustomContent/Maps/Iteration1.Iteration1:PersistentLevel.Iteration1'
+[2017.04.14-02.37.30:541][922]LogSavePackage: Save=366.89ms
+[2017.04.14-02.37.30:541][922]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Iteration1_Auto14D25DCA1410879F649FD4D977B4D188F.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Autosaves/Game/CustomContent/Maps/Iteration1_Auto1.umap'
+[2017.04.14-02.37.30:544][922]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Autosaves/Game/CustomContent/Maps/Iteration1_Auto1.umap
+[2017.04.14-02.37.30:577][922]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/CustomContent/Maps/Iteration1' took 0.980
+[2017.04.14-02.37.30:577][922]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.980
+[2017.04.14-02.57.52:186][ 21]LogSavePackage: Save=367.35ms
+[2017.04.14-02.57.52:186][ 21]LogSavePackage: Moving '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Iteration1493CFC8B465B5FCDD23265939C3104BC.tmp' to '../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1.umap'
+[2017.04.14-02.57.52:189][ 21]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/CustomContent/Maps/Iteration1.umap
+[2017.04.14-02.57.52:297][ 21]LogFileHelpers: Saving map 'Iteration1' took 0.584
+[2017.04.14-02.57.54:248][ 44]Cmd: QUIT_EDITOR
+[2017.04.14-02.57.54:785][ 44]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.14-02.57.54:857][ 44]LogExit: Preparing to exit.
+[2017.04.14-02.57.56:388][ 44]LogDirectoryWatcher: A directory notification for 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/' was aborted.
+[2017.04.14-02.57.56:583][ 44]LogExit: Editor shut down
+[2017.04.14-02.57.56:585][ 44]LogExit: Transaction tracking system shut down
+[2017.04.14-02.57.58:230][ 44]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.14-02.57.58:230][ 44]LogExit: Object subsystem successfully closed.
+[2017.04.14-02.57.58:541][ 44]LogD3D11RHI: Shutdown
+[2017.04.14-02.57.58:541][ 44]LogD3D11RHI: CleanupD3DDevice
+[2017.04.14-02.57.59:008][ 44]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.14-02.57.59:809][ 44]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (504)
+[2017.04.14-02.57.59:809][ 44]LogModuleManager: Shutting down and abandoning module BlueprintGraph (502)
+[2017.04.14-02.57.59:809][ 44]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (500)
+[2017.04.14-02.57.59:818][ 44]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.04.14-02.57.59:837][ 44]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.04.14-02.57.59:837][ 44]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.04.14-02.57.59:837][ 44]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.04.14-02.57.59:847][ 44]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.14-02.57.59:861][ 44]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.04.14-02.57.59:861][ 44]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.04.14-02.57.59:861][ 44]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.04.14-02.57.59:905][ 44]LogDirectoryWatcher: A directory notification for 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/Collections/' was aborted.
+[2017.04.14-02.57.59:905][ 44]LogDirectoryWatcher: A directory notification for 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Content/Developers/Zane/Collections/' was aborted.
+[2017.04.14-02.57.59:905][ 44]LogDirectoryWatcher: A directory notification for 'C:/Users/Zane/Documents/LevelDesignVR/LevelDesign/Saved/Collections/' was aborted.
+[2017.04.14-02.57.59:905][ 44]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.04.14-02.57.59:929][ 44]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.04.14-02.57.59:930][ 44]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.04.14-02.57.59:938][ 44]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.04.14-02.57.59:938][ 44]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.04.14-02.57.59:938][ 44]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.04.14-02.57.59:938][ 44]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.04.14-02.57.59:938][ 44]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.04.14-02.57.59:949][ 44]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.04.14-02.57.59:954][ 44]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.04.14-02.57.59:966][ 44]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.04.14-02.57.59:972][ 44]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.04.14-02.57.59:983][ 44]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.04.14-02.58.00:039][ 44]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.04.14-02.58.00:046][ 44]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.04.14-02.58.00:089][ 44]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.04.14-02.58.00:089][ 44]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.04.14-02.58.00:089][ 44]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.04.14-02.58.00:089][ 44]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.04.14-02.58.00:089][ 44]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.04.14-02.58.00:113][ 44]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.04.14-02.58.00:116][ 44]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.04.14-02.58.00:144][ 44]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.04.14-02.58.00:144][ 44]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.04.14-02.58.00:144][ 44]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.04.14-02.58.00:144][ 44]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.04.14-02.58.00:155][ 44]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.04.14-02.58.00:212][ 44]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.04.14-02.58.00:212][ 44]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.04.14-02.58.00:212][ 44]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.04.14-02.58.00:269][ 44]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.04.14-02.58.00:317][ 44]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.04.14-02.58.00:320][ 44]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.04.14-02.58.00:324][ 44]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.04.14-02.58.00:330][ 44]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.04.14-02.58.00:330][ 44]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.04.14-02.58.00:341][ 44]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.04.14-02.58.00:433][ 44]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.04.14-02.58.00:508][ 44]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.04.14-02.58.00:534][ 44]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.04.14-02.58.00:545][ 44]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.04.14-02.58.00:545][ 44]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.04.14-02.58.00:549][ 44]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.04.14-02.58.00:567][ 44]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.04.14-02.58.00:567][ 44]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.04.14-02.58.00:568][ 44]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.04.14-02.58.00:568][ 44]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.04.14-02.58.00:586][ 44]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.04.14-02.58.00:612][ 44]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.04.14-02.58.00:620][ 44]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.04.14-02.58.00:627][ 44]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.04.14-02.58.00:642][ 44]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.04.14-02.58.00:683][ 44]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.04.14-02.58.00:786][ 44]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.04.14-02.58.00:938][ 44]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.04.14-02.58.01:148][ 44]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.04.14-02.58.01:148][ 44]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.04.14-02.58.01:182][ 44]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.04.14-02.58.01:182][ 44]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.04.14-02.58.01:207][ 44]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.04.14-02.58.01:207][ 44]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.04.14-02.58.01:221][ 44]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.04.14-02.58.01:221][ 44]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.04.14-02.58.01:283][ 44]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.04.14-02.58.01:320][ 44]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
